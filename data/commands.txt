@@ -1,0 +1,16 @@
+# PS-091 command stream. PROCESS_UNTIL merges ad_requests.csv and clicks.csv by timestamp (a click at the same second as a request is processed
+# first) and processes everything up to the instant. Request sequence numbers (for the pacing parity rule) = the numeric part of request_id.
+OPEN_DAY|2026-10-12
+PROCESS_UNTIL|2026-10-12 23:59:59
+CLOSE_DAY|2026-10-12
+PRINT_DAILY_REPORT|2026-10-12
+OPEN_DAY|2026-10-13
+PROCESS_UNTIL|2026-10-13 23:59:59
+CLOSE_DAY|2026-10-13
+PRINT_DAILY_REPORT|2026-10-13
+OPEN_DAY|2026-10-14
+PROCESS_UNTIL|2026-10-14 23:59:59
+CLOSE_DAY|2026-10-14
+PRINT_DAILY_REPORT|2026-10-14
+PRINT_PUBLISHER_PAYOUT|2026-10
+PRINT_AUCTION_LOG|2026-10-12|2026-10-14

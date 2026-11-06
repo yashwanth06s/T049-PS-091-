@@ -1,0 +1,6 @@
+publisher_id,publisher_name,floor_cpm,mtd_billed_before,rollover_payout
+PUB-1,Deccan Daily News,60.00,54000.00,3200.00
+PUB-2,CricBuzzer Sports,80.00,51000.00,3200.00
+PUB-3,TechTalk India,90.00,52000.00,3200.00
+PUB-4,Mint Street Finance,120.00,30000.00,0.00
+PUB-5,Gaon Connect,150.00,99982.60,0.00

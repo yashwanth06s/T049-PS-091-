@@ -1,0 +1,9 @@
+advertiser_id,advertiser_name,account_type,wallet_balance,credit_limit
+ADV-01,Namma Mart,PREPAID,470000.00,0.00
+ADV-02,ZipKart Electronics,PREPAID,600000.00,0.00
+ADV-03,Udaan Air Travels,PREPAID,720000.00,0.00
+ADV-04,PolicyKavach Insurance,PREPAID,720000.00,0.00
+ADV-05,Krishi Mitra Agro,PREPAID,810000.00,0.00
+ADV-06,Nyaya Legal Services,PREPAID,460000.00,0.00
+ADV-07,Divya Darshan Pilgrimages,CREDIT,-49995.51,50000.00
+ADV-08,SkillUp Academy,PREPAID,780000.00,0.00

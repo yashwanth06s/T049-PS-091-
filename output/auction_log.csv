@@ -1,0 +1,1418 @@
+request_id,outcome,winner_campaign_id,winner_ecpm,second_ecpm,clearing_cpm,bidders,reason
+REQ-000001,UNFILLED,,,,,1,No bid meets the floor
+REQ-000002,UNFILLED,,,,,0,No eligible campaigns
+REQ-000003,UNFILLED,,,,,2,No bid meets the floor
+REQ-000004,UNFILLED,,,,,3,No bid meets the floor
+REQ-000005,UNFILLED,,,,,1,No bid meets the floor
+REQ-000006,UNFILLED,,,,,1,No bid meets the floor
+REQ-000007,SERVED,CMP-017,160.00,95.00,95.01,3,Highest eligible bid won
+REQ-000008,SERVED,CMP-017,160.00,125.00,125.01,4,Highest eligible bid won
+REQ-000009,SERVED,CMP-013,95.00,70.00,70.01,2,Highest eligible bid won
+REQ-000010,SERVED,CMP-017,160.00,110.00,110.01,3,Highest eligible bid won
+REQ-000011,SERVED,CMP-010,140.00,,60.00,1,Highest eligible bid won
+REQ-000012,SERVED,CMP-020,70.00,69.00,69.01,2,Highest eligible bid won
+REQ-000013,SERVED,CMP-019,95.00,85.00,85.01,2,Highest eligible bid won
+REQ-000014,SERVED,CMP-017,160.00,110.00,110.01,3,Highest eligible bid won
+REQ-000015,SERVED,CMP-016,125.00,95.00,95.01,2,Highest eligible bid won
+REQ-000016,SERVED,CMP-016,125.00,70.00,120.01,2,Highest eligible bid won
+REQ-000017,SERVED,CMP-013,95.00,95.00,95.01,3,Highest eligible bid won
+REQ-000018,SERVED,CMP-013,95.00,,60.00,1,Highest eligible bid won
+REQ-000019,SERVED,CMP-017,160.00,125.00,125.01,4,Highest eligible bid won
+REQ-000020,UNFILLED,,,,,2,No bid meets the floor
+REQ-000021,SERVED,CMP-017,160.00,110.00,110.01,3,Highest eligible bid won
+REQ-000022,SERVED,CMP-016,125.00,70.00,70.01,2,Highest eligible bid won
+REQ-000023,UNFILLED,,,,,3,No bid meets the floor
+REQ-000024,SERVED,CMP-015,110.00,95.00,95.01,3,Highest eligible bid won
+REQ-000025,SERVED,CMP-011,110.00,95.00,95.01,3,Highest eligible bid won
+REQ-000026,SERVED,CMP-017,160.00,110.00,110.01,3,Highest eligible bid won
+REQ-000027,UNFILLED,,,,,1,No bid meets the floor
+REQ-000028,SERVED,CMP-016,125.00,85.00,85.01,3,Highest eligible bid won
+REQ-000029,SERVED,CMP-016,125.00,95.00,95.01,2,Highest eligible bid won
+REQ-000030,SERVED,CMP-019,95.00,,80.00,1,Highest eligible bid won
+REQ-000031,SERVED,CMP-017,160.00,,60.00,1,Highest eligible bid won
+REQ-000032,SERVED,CMP-019,95.00,70.00,80.01,2,Highest eligible bid won
+REQ-000033,SERVED,CMP-016,125.00,85.00,120.01,3,Highest eligible bid won
+REQ-000034,SERVED,CMP-017,160.00,125.00,125.01,4,Highest eligible bid won
+REQ-000035,SERVED,CMP-016,125.00,95.00,95.01,2,Highest eligible bid won
+REQ-000036,SERVED,CMP-010,140.00,95.00,95.01,2,Highest eligible bid won
+REQ-000037,SERVED,CMP-017,160.00,125.00,125.01,5,Highest eligible bid won
+REQ-000038,SERVED,CMP-017,160.00,95.00,95.01,2,Highest eligible bid won
+REQ-000039,SERVED,CMP-011,110.00,95.00,95.01,3,Highest eligible bid won
+REQ-000040,SERVED,CMP-016,125.00,70.00,70.01,3,Highest eligible bid won
+REQ-000041,SERVED,CMP-019,95.00,85.00,90.01,2,Highest eligible bid won
+REQ-000042,SERVED,CMP-013,95.00,70.00,70.01,2,Highest eligible bid won
+REQ-000043,SERVED,CMP-013,95.00,70.00,80.01,2,Highest eligible bid won
+REQ-000044,SERVED,CMP-016,125.00,95.00,95.01,2,Highest eligible bid won
+REQ-000045,UNFILLED,,,,,2,No bid meets the floor
+REQ-000046,UNFILLED,,,,,1,No bid meets the floor
+REQ-000047,SERVED,CMP-013,95.00,70.00,70.01,2,Highest eligible bid won
+REQ-000048,SERVED,CMP-017,160.00,95.00,95.01,4,Highest eligible bid won
+REQ-000049,UNFILLED,,,,,2,No bid meets the floor
+REQ-000050,UNFILLED,,,,,3,No bid meets the floor
+REQ-000051,SERVED,CMP-011,110.00,95.00,95.01,2,Highest eligible bid won
+REQ-000052,UNFILLED,,,,,1,No bid meets the floor
+REQ-000053,SERVED,CMP-016,125.00,,80.00,1,Highest eligible bid won
+REQ-000054,SERVED,CMP-017,160.00,110.00,110.01,3,Highest eligible bid won
+REQ-000055,SERVED,CMP-017,160.00,95.00,120.01,2,Highest eligible bid won
+REQ-000056,SERVED,CMP-011,110.00,,90.00,1,Highest eligible bid won
+REQ-000057,SERVED,CMP-019,95.00,,60.00,1,Highest eligible bid won
+REQ-000058,SERVED,CMP-013,95.00,70.00,70.01,2,Highest eligible bid won
+REQ-000059,SERVED,CMP-019,95.00,,90.00,1,Highest eligible bid won
+REQ-000060,SERVED,CMP-017,160.00,95.00,120.01,3,Highest eligible bid won
+REQ-000061,SERVED,CMP-016,125.00,70.00,80.01,3,Highest eligible bid won
+REQ-000062,SERVED,CMP-002,170.00,,150.00,1,Highest eligible bid won
+REQ-000063,SERVED,CMP-019,95.00,95.00,95.01,3,Highest eligible bid won
+REQ-000064,SERVED,CMP-019,95.00,,60.00,1,Highest eligible bid won
+REQ-000065,SERVED,CMP-017,160.00,110.00,110.01,3,Highest eligible bid won
+REQ-000066,SERVED,CMP-016,125.00,70.00,90.01,2,Highest eligible bid won
+REQ-000067,SERVED,CMP-019,95.00,,60.00,1,Highest eligible bid won
+REQ-000068,SERVED,CMP-016,125.00,70.00,90.01,3,Highest eligible bid won
+REQ-000069,SERVED,CMP-013,95.00,,60.00,1,Highest eligible bid won
+REQ-000070,SERVED,CMP-019,95.00,,60.00,1,Highest eligible bid won
+REQ-000071,UNFILLED,,,,,2,No bid meets the floor
+REQ-000072,SERVED,CMP-002,170.00,,150.00,1,Highest eligible bid won
+REQ-000073,SERVED,CMP-017,160.00,95.00,95.01,4,Highest eligible bid won
+REQ-000074,SERVED,CMP-013,95.00,,60.00,1,Highest eligible bid won
+REQ-000075,SERVED,CMP-017,160.00,125.00,125.01,5,Highest eligible bid won
+REQ-000076,UNFILLED,,,,,2,No bid meets the floor
+REQ-000077,SERVED,CMP-016,125.00,,60.00,1,Highest eligible bid won
+REQ-000078,SERVED,CMP-004,180.00,90.00,120.01,2,Highest eligible bid won
+REQ-000079,UNFILLED,,,,,3,No bid meets the floor
+REQ-000080,SERVED,CMP-019,95.00,70.00,70.01,2,Highest eligible bid won
+REQ-000081,SERVED,CMP-017,160.00,110.00,110.01,3,Highest eligible bid won
+REQ-000082,SERVED,CMP-019,95.00,70.00,90.01,2,Highest eligible bid won
+REQ-000083,SERVED,CMP-017,160.00,125.00,125.01,5,Highest eligible bid won
+REQ-000084,SERVED,CMP-019,95.00,,60.00,1,Highest eligible bid won
+REQ-000085,SERVED,CMP-011,110.00,,60.00,1,Highest eligible bid won
+REQ-000086,SERVED,CMP-013,95.00,,60.00,1,Highest eligible bid won
+REQ-000087,SERVED,CMP-006,175.00,,120.00,1,Highest eligible bid won
+REQ-000088,SERVED,CMP-016,125.00,70.00,70.01,2,Highest eligible bid won
+REQ-000089,UNFILLED,,,,,0,No eligible campaigns
+REQ-000090,SERVED,CMP-011,110.00,95.00,95.01,3,Highest eligible bid won
+REQ-000091,UNFILLED,,,,,1,No bid meets the floor
+REQ-000092,SERVED,CMP-015,110.00,95.00,95.01,2,Highest eligible bid won
+REQ-000093,SERVED,CMP-011,110.00,,60.00,1,Highest eligible bid won
+REQ-000094,SERVED,CMP-011,110.00,95.00,95.01,2,Highest eligible bid won
+REQ-000095,SERVED,CMP-019,95.00,,60.00,1,Highest eligible bid won
+REQ-000096,SERVED,CMP-017,160.00,110.00,110.01,3,Highest eligible bid won
+REQ-000097,SERVED,CMP-017,160.00,95.00,95.01,2,Highest eligible bid won
+REQ-000098,SERVED,CMP-016,125.00,70.00,90.01,2,Highest eligible bid won
+REQ-000099,UNFILLED,,,,,0,No eligible campaigns
+REQ-000100,SERVED,CMP-006,175.00,,120.00,1,Highest eligible bid won
+REQ-000101,SERVED,CMP-011,110.00,,60.00,1,Highest eligible bid won
+REQ-000102,SERVED,CMP-019,95.00,,60.00,1,Highest eligible bid won
+REQ-000103,SERVED,CMP-002,170.00,,150.00,1,Highest eligible bid won
+REQ-000104,SERVED,CMP-015,110.00,95.00,95.01,3,Highest eligible bid won
+REQ-000105,SERVED,CMP-015,110.00,95.00,95.01,2,Highest eligible bid won
+REQ-000106,SERVED,CMP-017,160.00,125.00,125.01,5,Highest eligible bid won
+REQ-000107,SERVED,CMP-017,160.00,110.00,110.01,3,Highest eligible bid won
+REQ-000108,SERVED,CMP-011,110.00,,60.00,1,Highest eligible bid won
+REQ-000109,SERVED,CMP-017,160.00,125.00,125.01,5,Highest eligible bid won
+REQ-000110,SERVED,CMP-020,70.00,,60.00,1,Highest eligible bid won
+REQ-000111,UNFILLED,,,,,0,No eligible campaigns
+REQ-000112,UNFILLED,,,,,2,No bid meets the floor
+REQ-000113,SERVED,CMP-001,150.00,,150.00,1,Highest eligible bid won
+REQ-000114,SERVED,CMP-017,160.00,95.00,120.01,2,Highest eligible bid won
+REQ-000115,UNFILLED,,,,,1,No bid meets the floor
+REQ-000116,SERVED,CMP-017,160.00,95.00,95.01,2,Highest eligible bid won
+REQ-000117,SERVED,CMP-019,95.00,,60.00,1,Highest eligible bid won
+REQ-000118,SERVED,CMP-017,160.00,95.00,95.01,2,Highest eligible bid won
+REQ-000119,SERVED,CMP-017,160.00,110.00,110.01,3,Highest eligible bid won
+REQ-000120,SERVED,CMP-011,110.00,,80.00,1,Highest eligible bid won
+REQ-000121,SERVED,CMP-017,160.00,,90.00,1,Highest eligible bid won
+REQ-000122,UNFILLED,,,,,2,No bid meets the floor
+REQ-000123,SERVED,CMP-013,95.00,95.00,95.01,3,Highest eligible bid won
+REQ-000124,SERVED,CMP-011,110.00,,80.00,1,Highest eligible bid won
+REQ-000125,UNFILLED,,,,,0,No eligible campaigns
+REQ-000126,SERVED,CMP-016,125.00,70.00,120.01,3,Highest eligible bid won
+REQ-000127,UNFILLED,,,,,1,No bid meets the floor
+REQ-000128,SERVED,CMP-013,95.00,,60.00,1,Highest eligible bid won
+REQ-000129,SERVED,CMP-013,95.00,95.00,95.01,3,Highest eligible bid won
+REQ-000130,SERVED,CMP-020,70.00,55.00,60.01,2,Highest eligible bid won
+REQ-000131,SERVED,CMP-003,200.00,,150.00,1,Highest eligible bid won
+REQ-000132,SERVED,CMP-016,125.00,85.00,85.01,3,Highest eligible bid won
+REQ-000133,SERVED,CMP-016,125.00,70.00,70.01,2,Highest eligible bid won
+REQ-000134,UNFILLED,,,,,3,No bid meets the floor
+REQ-000135,SERVED,CMP-013,95.00,70.00,70.01,2,Highest eligible bid won
+REQ-000136,SERVED,CMP-017,160.00,110.00,120.01,3,Highest eligible bid won
+REQ-000137,SERVED,CMP-013,95.00,70.00,90.01,2,Highest eligible bid won
+REQ-000138,SERVED,CMP-001,150.00,,150.00,1,Highest eligible bid won
+REQ-000139,SERVED,CMP-017,160.00,95.00,95.01,2,Highest eligible bid won
+REQ-000140,SERVED,CMP-017,160.00,95.00,120.01,2,Highest eligible bid won
+REQ-000141,SERVED,CMP-017,160.00,95.00,120.01,2,Highest eligible bid won
+REQ-000142,UNFILLED,,,,,1,No bid meets the floor
+REQ-000143,UNFILLED,,,,,2,No bid meets the floor
+REQ-000144,SERVED,CMP-011,110.00,,60.00,1,Highest eligible bid won
+REQ-000145,SERVED,CMP-019,95.00,85.00,85.01,2,Highest eligible bid won
+REQ-000146,SERVED,CMP-003,200.00,,150.00,1,Highest eligible bid won
+REQ-000147,SERVED,CMP-017,160.00,125.00,125.01,5,Highest eligible bid won
+REQ-000148,SERVED,CMP-015,110.00,95.00,95.01,2,Highest eligible bid won
+REQ-000149,SERVED,CMP-017,160.00,110.00,110.01,3,Highest eligible bid won
+REQ-000150,SERVED,CMP-011,110.00,95.00,95.01,3,Highest eligible bid won
+REQ-000151,SERVED,CMP-019,95.00,70.00,90.01,2,Highest eligible bid won
+REQ-000152,UNFILLED,,,,,1,No bid meets the floor
+REQ-000153,SERVED,CMP-017,160.00,95.00,120.01,2,Highest eligible bid won
+REQ-000154,SERVED,CMP-003,200.00,,150.00,1,Highest eligible bid won
+REQ-000155,SERVED,CMP-011,110.00,95.00,95.01,3,Highest eligible bid won
+REQ-000156,UNFILLED,,,,,1,No bid meets the floor
+REQ-000157,SERVED,CMP-013,95.00,70.00,90.01,2,Highest eligible bid won
+REQ-000158,SERVED,CMP-016,125.00,70.00,70.01,3,Highest eligible bid won
+REQ-000159,SERVED,CMP-017,160.00,95.00,95.01,3,Highest eligible bid won
+REQ-000160,SERVED,CMP-015,110.00,95.00,95.01,3,Highest eligible bid won
+REQ-000161,SERVED,CMP-017,160.00,110.00,110.01,3,Highest eligible bid won
+REQ-000162,SERVED,CMP-019,95.00,85.00,85.01,2,Highest eligible bid won
+REQ-000163,SERVED,CMP-017,160.00,125.00,125.01,5,Highest eligible bid won
+REQ-000164,SERVED,CMP-017,160.00,125.00,125.01,5,Highest eligible bid won
+REQ-000165,SERVED,CMP-017,160.00,95.00,95.01,2,Highest eligible bid won
+REQ-000166,UNFILLED,,,,,2,No bid meets the floor
+REQ-000167,UNFILLED,,,,,2,No bid meets the floor
+REQ-000168,SERVED,CMP-011,110.00,95.00,95.01,3,Highest eligible bid won
+REQ-000169,SERVED,CMP-017,160.00,125.00,125.01,3,Highest eligible bid won
+REQ-000170,SERVED,CMP-016,125.00,85.00,120.01,3,Highest eligible bid won
+REQ-000171,SERVED,CMP-004,180.00,90.00,120.01,2,Highest eligible bid won
+REQ-000172,SERVED,CMP-019,95.00,55.00,80.01,2,Highest eligible bid won
+REQ-000173,UNFILLED,,,,,2,No bid meets the floor
+REQ-000174,SERVED,CMP-016,125.00,85.00,90.01,3,Highest eligible bid won
+REQ-000175,UNFILLED,,,,,1,No bid meets the floor
+REQ-000176,SERVED,CMP-013,95.00,70.00,80.01,2,Highest eligible bid won
+REQ-000177,UNFILLED,,,,,2,No bid meets the floor
+REQ-000178,SERVED,CMP-013,95.00,70.00,70.01,2,Highest eligible bid won
+REQ-000179,SERVED,CMP-020,70.00,55.00,60.01,2,Highest eligible bid won
+REQ-000180,SERVED,CMP-017,160.00,,60.00,1,Highest eligible bid won
+REQ-000181,SERVED,CMP-002,170.00,,150.00,1,Highest eligible bid won
+REQ-000182,UNFILLED,,,,,2,No bid meets the floor
+REQ-000183,SERVED,CMP-016,125.00,85.00,90.01,3,Highest eligible bid won
+REQ-000184,SERVED,CMP-019,95.00,,80.00,1,Highest eligible bid won
+REQ-000185,SERVED,CMP-016,125.00,70.00,120.01,2,Highest eligible bid won
+REQ-000186,SERVED,CMP-013,95.00,95.00,95.01,3,Highest eligible bid won
+REQ-000187,SERVED,CMP-017,160.00,125.00,125.01,4,Highest eligible bid won
+REQ-000188,SERVED,CMP-019,95.00,70.00,80.01,2,Highest eligible bid won
+REQ-000189,SERVED,CMP-013,95.00,70.00,70.01,2,Highest eligible bid won
+REQ-000190,SERVED,CMP-017,160.00,125.00,125.01,3,Highest eligible bid won
+REQ-000191,UNFILLED,,,,,0,No eligible campaigns
+REQ-000192,UNFILLED,,,,,1,No bid meets the floor
+REQ-000193,SERVED,CMP-019,95.00,,60.00,1,Highest eligible bid won
+REQ-000194,SERVED,CMP-017,160.00,,120.00,1,Highest eligible bid won
+REQ-000195,SERVED,CMP-017,160.00,110.00,110.01,3,Highest eligible bid won
+REQ-000196,UNFILLED,,,,,0,No eligible campaigns
+REQ-000197,UNFILLED,,,,,1,No bid meets the floor
+REQ-000198,SERVED,CMP-017,160.00,110.00,110.01,3,Highest eligible bid won
+REQ-000199,UNFILLED,,,,,3,No bid meets the floor
+REQ-000200,UNFILLED,,,,,1,No bid meets the floor
+REQ-000201,SERVED,CMP-019,95.00,,90.00,1,Highest eligible bid won
+REQ-000202,SERVED,CMP-017,160.00,95.00,95.01,2,Highest eligible bid won
+REQ-000203,SERVED,CMP-002,170.00,,150.00,1,Highest eligible bid won
+REQ-000204,UNFILLED,,,,,0,No eligible campaigns
+REQ-000205,SERVED,CMP-013,95.00,70.00,80.01,2,Highest eligible bid won
+REQ-000206,SERVED,CMP-019,95.00,,60.00,1,Highest eligible bid won
+REQ-000207,UNFILLED,,,,,2,No bid meets the floor
+REQ-000208,SERVED,CMP-011,110.00,55.00,90.01,2,Highest eligible bid won
+REQ-000209,UNFILLED,,,,,0,No eligible campaigns
+REQ-000210,UNFILLED,,,,,0,No eligible campaigns
+REQ-000211,SERVED,CMP-017,160.00,95.00,95.01,2,Highest eligible bid won
+REQ-000212,UNFILLED,,,,,1,No bid meets the floor
+REQ-000213,UNFILLED,,,,,3,No bid meets the floor
+REQ-000214,SERVED,CMP-017,160.00,95.00,95.01,2,Highest eligible bid won
+REQ-000215,SERVED,CMP-017,160.00,95.00,120.01,2,Highest eligible bid won
+REQ-000216,SERVED,CMP-019,95.00,,60.00,1,Highest eligible bid won
+REQ-000217,SERVED,CMP-017,160.00,95.00,120.01,2,Highest eligible bid won
+REQ-000218,UNFILLED,,,,,2,No bid meets the floor
+REQ-000219,SERVED,CMP-003,200.00,,150.00,1,Highest eligible bid won
+REQ-000220,SERVED,CMP-017,160.00,125.00,125.01,5,Highest eligible bid won
+REQ-000221,UNFILLED,,,,,2,No bid meets the floor
+REQ-000222,SERVED,CMP-017,160.00,,60.00,1,Highest eligible bid won
+REQ-000223,SERVED,CMP-017,160.00,125.00,125.01,3,Highest eligible bid won
+REQ-000224,SERVED,CMP-013,95.00,70.00,80.01,2,Highest eligible bid won
+REQ-000225,SERVED,CMP-011,110.00,95.00,95.01,2,Highest eligible bid won
+REQ-000226,SERVED,CMP-016,125.00,85.00,85.01,3,Highest eligible bid won
+REQ-000227,UNFILLED,,,,,0,No eligible campaigns
+REQ-000228,UNFILLED,,,,,0,No eligible campaigns
+REQ-000229,SERVED,CMP-017,160.00,95.00,95.01,2,Highest eligible bid won
+REQ-000230,SERVED,CMP-017,160.00,110.00,110.01,3,Highest eligible bid won
+REQ-000231,SERVED,CMP-013,95.00,70.00,90.01,2,Highest eligible bid won
+REQ-000232,SERVED,CMP-016,125.00,85.00,85.01,3,Highest eligible bid won
+REQ-000233,SERVED,CMP-020,70.00,,60.00,1,Highest eligible bid won
+REQ-000234,SERVED,CMP-020,70.00,69.00,69.01,2,Highest eligible bid won
+REQ-000235,SERVED,CMP-017,160.00,125.00,125.01,4,Highest eligible bid won
+REQ-000236,SERVED,CMP-003,200.00,,150.00,1,Highest eligible bid won
+REQ-000237,SERVED,CMP-017,160.00,110.00,120.01,3,Highest eligible bid won
+REQ-000238,UNFILLED,,,,,2,No bid meets the floor
+REQ-000239,SERVED,CMP-017,160.00,69.00,69.01,2,Highest eligible bid won
+REQ-000240,SERVED,CMP-001,150.00,,150.00,1,Highest eligible bid won
+REQ-000241,SERVED,CMP-003,200.00,,150.00,1,Highest eligible bid won
+REQ-000242,SERVED,CMP-002,170.00,,150.00,1,Highest eligible bid won
+REQ-000243,SERVED,CMP-010,140.00,95.00,95.01,2,Highest eligible bid won
+REQ-000244,SERVED,CMP-016,125.00,70.00,90.01,2,Highest eligible bid won
+REQ-000245,UNFILLED,,,,,1,No bid meets the floor
+REQ-000246,SERVED,CMP-017,160.00,110.00,110.01,3,Highest eligible bid won
+REQ-000247,UNFILLED,,,,,1,No bid meets the floor
+REQ-000248,SERVED,CMP-017,160.00,110.00,110.01,3,Highest eligible bid won
+REQ-000249,SERVED,CMP-017,160.00,110.00,110.01,3,Highest eligible bid won
+REQ-000250,UNFILLED,,,,,2,No bid meets the floor
+REQ-000251,SERVED,CMP-013,95.00,,80.00,1,Highest eligible bid won
+REQ-000252,SERVED,CMP-017,160.00,110.00,110.01,3,Highest eligible bid won
+REQ-000253,SERVED,CMP-016,125.00,95.00,95.01,2,Highest eligible bid won
+REQ-000254,SERVED,CMP-011,110.00,95.00,95.01,3,Highest eligible bid won
+REQ-000255,SERVED,CMP-013,95.00,70.00,80.01,2,Highest eligible bid won
+REQ-000256,UNFILLED,,,,,2,No bid meets the floor
+REQ-000257,SERVED,CMP-011,110.00,95.00,95.01,3,Highest eligible bid won
+REQ-000258,SERVED,CMP-019,95.00,,60.00,1,Highest eligible bid won
+REQ-000259,SERVED,CMP-013,95.00,70.00,70.01,2,Highest eligible bid won
+REQ-000260,UNFILLED,,,,,0,No eligible campaigns
+REQ-000261,SERVED,CMP-006,175.00,,120.00,1,Highest eligible bid won
+REQ-000262,SERVED,CMP-017,160.00,125.00,125.01,4,Highest eligible bid won
+REQ-000263,SERVED,CMP-001,150.00,,150.00,1,Highest eligible bid won
+REQ-000264,SERVED,CMP-017,160.00,125.00,125.01,4,Highest eligible bid won
+REQ-000265,SERVED,CMP-011,110.00,,90.00,1,Highest eligible bid won
+REQ-000266,UNFILLED,,,,,0,No eligible campaigns
+REQ-000267,SERVED,CMP-019,95.00,85.00,85.01,2,Highest eligible bid won
+REQ-000268,SERVED,CMP-016,125.00,85.00,85.01,3,Highest eligible bid won
+REQ-000269,SERVED,CMP-017,160.00,125.00,125.01,5,Highest eligible bid won
+REQ-000270,UNFILLED,,,,,2,No bid meets the floor
+REQ-000271,SERVED,CMP-016,125.00,70.00,70.01,2,Highest eligible bid won
+REQ-000272,SERVED,CMP-017,160.00,95.00,95.01,2,Highest eligible bid won
+REQ-000273,UNFILLED,,,,,1,No bid meets the floor
+REQ-000274,SERVED,CMP-002,170.00,,150.00,1,Highest eligible bid won
+REQ-000275,SERVED,CMP-015,110.00,95.00,95.01,3,Highest eligible bid won
+REQ-000276,SERVED,CMP-017,160.00,125.00,125.01,4,Highest eligible bid won
+REQ-000277,SERVED,CMP-003,200.00,,150.00,1,Highest eligible bid won
+REQ-000278,SERVED,CMP-017,160.00,125.00,125.01,5,Highest eligible bid won
+REQ-000279,SERVED,CMP-006,175.00,,120.00,1,Highest eligible bid won
+REQ-000280,SERVED,CMP-011,110.00,95.00,95.01,3,Highest eligible bid won
+REQ-000281,SERVED,CMP-019,95.00,,60.00,1,Highest eligible bid won
+REQ-000282,SERVED,CMP-013,95.00,70.00,80.01,2,Highest eligible bid won
+REQ-000283,SERVED,CMP-013,95.00,70.00,70.01,2,Highest eligible bid won
+REQ-000284,SERVED,CMP-016,125.00,70.00,80.01,2,Highest eligible bid won
+REQ-000285,SERVED,CMP-017,160.00,125.00,125.01,5,Highest eligible bid won
+REQ-000286,SERVED,CMP-011,110.00,95.00,95.01,3,Highest eligible bid won
+REQ-000287,SERVED,CMP-017,160.00,110.00,110.01,3,Highest eligible bid won
+REQ-000288,UNFILLED,,,,,1,No bid meets the floor
+REQ-000289,SERVED,CMP-011,110.00,,60.00,1,Highest eligible bid won
+REQ-000290,SERVED,CMP-019,95.00,,90.00,1,Highest eligible bid won
+REQ-000291,SERVED,CMP-019,95.00,85.00,85.01,2,Highest eligible bid won
+REQ-000292,SERVED,CMP-017,160.00,95.00,95.01,2,Highest eligible bid won
+REQ-000293,UNFILLED,,,,,1,No bid meets the floor
+REQ-000294,SERVED,CMP-017,160.00,110.00,110.01,3,Highest eligible bid won
+REQ-000295,SERVED,CMP-003,200.00,,150.00,1,Highest eligible bid won
+REQ-000296,SERVED,CMP-017,160.00,95.00,95.01,2,Highest eligible bid won
+REQ-000297,SERVED,CMP-011,110.00,,80.00,1,Highest eligible bid won
+REQ-000298,SERVED,CMP-013,95.00,,60.00,1,Highest eligible bid won
+REQ-000299,SERVED,CMP-011,110.00,95.00,95.01,3,Highest eligible bid won
+REQ-000300,SERVED,CMP-017,160.00,110.00,110.01,3,Highest eligible bid won
+REQ-000301,UNFILLED,,,,,1,No bid meets the floor
+REQ-000302,UNFILLED,,,,,1,No bid meets the floor
+REQ-000303,SERVED,CMP-017,160.00,125.00,125.01,3,Highest eligible bid won
+REQ-000304,SERVED,CMP-020,70.00,55.00,60.01,2,Highest eligible bid won
+REQ-000305,SERVED,CMP-019,95.00,85.00,85.01,2,Highest eligible bid won
+REQ-000306,SERVED,CMP-019,95.00,85.00,85.01,2,Highest eligible bid won
+REQ-000307,UNFILLED,,,,,1,No bid meets the floor
+REQ-000308,SERVED,CMP-017,160.00,125.00,125.01,5,Highest eligible bid won
+REQ-000309,SERVED,CMP-003,200.00,,150.00,1,Highest eligible bid won
+REQ-000310,SERVED,CMP-002,170.00,,150.00,1,Highest eligible bid won
+REQ-000311,SERVED,CMP-003,200.00,,150.00,1,Highest eligible bid won
+REQ-000312,SERVED,CMP-017,160.00,125.00,125.01,5,Highest eligible bid won
+REQ-000313,SERVED,CMP-003,200.00,,150.00,1,Highest eligible bid won
+REQ-000314,SERVED,CMP-017,160.00,,60.00,1,Highest eligible bid won
+REQ-000315,SERVED,CMP-017,160.00,125.00,125.01,4,Highest eligible bid won
+REQ-000316,UNFILLED,,,,,3,No bid meets the floor
+REQ-000317,SERVED,CMP-015,110.00,95.00,95.01,2,Highest eligible bid won
+REQ-000318,SERVED,CMP-018,85.00,70.00,70.01,2,Highest eligible bid won
+REQ-000319,SERVED,CMP-016,125.00,70.00,70.01,2,Highest eligible bid won
+REQ-000320,SERVED,CMP-016,125.00,70.00,90.01,2,Highest eligible bid won
+REQ-000321,SERVED,CMP-016,125.00,70.00,120.01,3,Highest eligible bid won
+REQ-000322,SERVED,CMP-013,95.00,,80.00,1,Highest eligible bid won
+REQ-000323,SERVED,CMP-016,125.00,70.00,80.01,2,Highest eligible bid won
+REQ-000324,SERVED,CMP-003,200.00,,150.00,1,Highest eligible bid won
+REQ-000325,SERVED,CMP-016,125.00,70.00,70.01,2,Highest eligible bid won
+REQ-000326,SERVED,CMP-017,160.00,125.00,125.01,4,Highest eligible bid won
+REQ-000327,SERVED,CMP-019,95.00,,80.00,1,Highest eligible bid won
+REQ-000328,SERVED,CMP-003,200.00,,150.00,1,Highest eligible bid won
+REQ-000329,SERVED,CMP-019,95.00,70.00,70.01,2,Highest eligible bid won
+REQ-000330,SERVED,CMP-013,95.00,70.00,70.01,2,Highest eligible bid won
+REQ-000331,UNFILLED,,,,,0,No eligible campaigns
+REQ-000332,SERVED,CMP-001,150.00,,150.00,1,Highest eligible bid won
+REQ-000333,SERVED,CMP-015,110.00,95.00,95.01,3,Highest eligible bid won
+REQ-000334,SERVED,CMP-016,125.00,70.00,70.01,2,Highest eligible bid won
+REQ-000335,SERVED,CMP-019,95.00,,60.00,1,Highest eligible bid won
+REQ-000336,SERVED,CMP-011,110.00,95.00,95.01,2,Highest eligible bid won
+REQ-000337,SERVED,CMP-016,125.00,,60.00,1,Highest eligible bid won
+REQ-000338,SERVED,CMP-013,95.00,70.00,80.01,2,Highest eligible bid won
+REQ-000339,SERVED,CMP-017,160.00,95.00,120.01,2,Highest eligible bid won
+REQ-000340,SERVED,CMP-011,110.00,,60.00,1,Highest eligible bid won
+REQ-000341,SERVED,CMP-017,160.00,95.00,95.01,2,Highest eligible bid won
+REQ-000342,SERVED,CMP-015,110.00,95.00,95.01,2,Highest eligible bid won
+REQ-000343,SERVED,CMP-006,175.00,,120.00,1,Highest eligible bid won
+REQ-000344,SERVED,CMP-016,125.00,70.00,90.01,3,Highest eligible bid won
+REQ-000345,SERVED,CMP-011,110.00,,60.00,1,Highest eligible bid won
+REQ-000346,SERVED,CMP-017,160.00,110.00,110.01,3,Highest eligible bid won
+REQ-000347,SERVED,CMP-019,95.00,,60.00,1,Highest eligible bid won
+REQ-000348,SERVED,CMP-019,95.00,,80.00,1,Highest eligible bid won
+REQ-000349,SERVED,CMP-019,95.00,85.00,85.01,2,Highest eligible bid won
+REQ-000350,SERVED,CMP-013,95.00,70.00,90.01,2,Highest eligible bid won
+REQ-000351,SERVED,CMP-011,110.00,,60.00,1,Highest eligible bid won
+REQ-000352,SERVED,CMP-016,125.00,70.00,70.01,2,Highest eligible bid won
+REQ-000353,SERVED,CMP-004,180.00,90.00,120.01,2,Highest eligible bid won
+REQ-000354,UNFILLED,,,,,2,No bid meets the floor
+REQ-000355,SERVED,CMP-017,160.00,95.00,95.01,2,Highest eligible bid won
+REQ-000356,SERVED,CMP-010,140.00,125.00,125.01,4,Highest eligible bid won
+REQ-000357,SERVED,CMP-016,125.00,70.00,70.01,2,Highest eligible bid won
+REQ-000358,SERVED,CMP-016,125.00,70.00,120.01,2,Highest eligible bid won
+REQ-000359,SERVED,CMP-017,160.00,95.00,95.01,2,Highest eligible bid won
+REQ-000360,SERVED,CMP-017,160.00,69.00,90.01,2,Highest eligible bid won
+REQ-000361,SERVED,CMP-015,110.00,95.00,95.01,2,Highest eligible bid won
+REQ-000362,SERVED,CMP-015,110.00,95.00,95.01,3,Highest eligible bid won
+REQ-000363,SERVED,CMP-006,175.00,,120.00,1,Highest eligible bid won
+REQ-000364,UNFILLED,,,,,0,No eligible campaigns
+REQ-000365,UNFILLED,,,,,2,No bid meets the floor
+REQ-000366,SERVED,CMP-017,160.00,110.00,120.01,3,Highest eligible bid won
+REQ-000367,SERVED,CMP-017,160.00,110.00,110.01,3,Highest eligible bid won
+REQ-000368,SERVED,CMP-017,160.00,110.00,110.01,3,Highest eligible bid won
+REQ-000369,SERVED,CMP-019,95.00,70.00,80.01,2,Highest eligible bid won
+REQ-000370,SERVED,CMP-010,140.00,110.00,110.01,2,Highest eligible bid won
+REQ-000371,SERVED,CMP-011,110.00,95.00,95.01,3,Highest eligible bid won
+REQ-000372,SERVED,CMP-017,160.00,125.00,125.01,5,Highest eligible bid won
+REQ-000373,SERVED,CMP-013,95.00,95.00,95.01,3,Highest eligible bid won
+REQ-000374,SERVED,CMP-011,110.00,,60.00,1,Highest eligible bid won
+REQ-000375,SERVED,CMP-019,95.00,,90.00,1,Highest eligible bid won
+REQ-000376,SERVED,CMP-013,95.00,95.00,95.01,3,Highest eligible bid won
+REQ-000377,SERVED,CMP-011,110.00,95.00,95.01,3,Highest eligible bid won
+REQ-000378,SERVED,CMP-011,110.00,95.00,95.01,3,Highest eligible bid won
+REQ-000379,SERVED,CMP-015,110.00,95.00,95.01,3,Highest eligible bid won
+REQ-000380,SERVED,CMP-013,95.00,95.00,95.01,3,Highest eligible bid won
+REQ-000381,SERVED,CMP-016,125.00,70.00,70.01,2,Highest eligible bid won
+REQ-000382,SERVED,CMP-017,160.00,110.00,110.01,3,Highest eligible bid won
+REQ-000383,SERVED,CMP-017,160.00,69.00,90.01,2,Highest eligible bid won
+REQ-000384,SERVED,CMP-013,95.00,70.00,70.01,2,Highest eligible bid won
+REQ-000385,SERVED,CMP-017,160.00,125.00,125.01,3,Highest eligible bid won
+REQ-000386,SERVED,CMP-011,110.00,95.00,95.01,2,Highest eligible bid won
+REQ-000387,SERVED,CMP-017,160.00,,120.00,1,Highest eligible bid won
+REQ-000388,SERVED,CMP-013,95.00,95.00,95.01,3,Highest eligible bid won
+REQ-000389,SERVED,CMP-019,95.00,55.00,80.01,2,Highest eligible bid won
+REQ-000390,SERVED,CMP-011,110.00,95.00,95.01,3,Highest eligible bid won
+REQ-000391,SERVED,CMP-011,110.00,95.00,95.01,3,Highest eligible bid won
+REQ-000392,SERVED,CMP-011,110.00,,60.00,1,Highest eligible bid won
+REQ-000393,UNFILLED,,,,,0,No eligible campaigns
+REQ-000394,SERVED,CMP-013,95.00,,60.00,1,Highest eligible bid won
+REQ-000395,UNFILLED,,,,,1,No bid meets the floor
+REQ-000396,SERVED,CMP-017,160.00,125.00,125.01,3,Highest eligible bid won
+REQ-000397,SERVED,CMP-016,125.00,95.00,120.01,2,Highest eligible bid won
+REQ-000398,UNFILLED,,,,,0,No eligible campaigns
+REQ-000399,SERVED,CMP-019,95.00,,80.00,1,Highest eligible bid won
+REQ-000400,SERVED,CMP-017,160.00,110.00,110.01,3,Highest eligible bid won
+REQ-000401,UNFILLED,,,,,2,No bid meets the floor
+REQ-000402,SERVED,CMP-019,95.00,,80.00,1,Highest eligible bid won
+REQ-000403,SERVED,CMP-017,160.00,95.00,95.01,4,Highest eligible bid won
+REQ-000404,SERVED,CMP-011,110.00,95.00,95.01,2,Highest eligible bid won
+REQ-000405,SERVED,CMP-016,125.00,70.00,70.01,2,Highest eligible bid won
+REQ-000406,SERVED,CMP-013,95.00,70.00,70.01,2,Highest eligible bid won
+REQ-000407,SERVED,CMP-011,110.00,95.00,95.01,3,Highest eligible bid won
+REQ-000408,SERVED,CMP-011,110.00,55.00,60.01,2,Highest eligible bid won
+REQ-000409,SERVED,CMP-013,95.00,70.00,70.01,2,Highest eligible bid won
+REQ-000410,SERVED,CMP-013,95.00,70.00,70.01,2,Highest eligible bid won
+REQ-000411,SERVED,CMP-016,125.00,70.00,80.01,2,Highest eligible bid won
+REQ-000412,SERVED,CMP-019,95.00,,90.00,1,Highest eligible bid won
+REQ-000413,SERVED,CMP-016,125.00,70.00,70.01,2,Highest eligible bid won
+REQ-000414,SERVED,CMP-019,95.00,85.00,85.01,2,Highest eligible bid won
+REQ-000415,SERVED,CMP-011,110.00,95.00,95.01,2,Highest eligible bid won
+REQ-000416,UNFILLED,,,,,2,No bid meets the floor
+REQ-000417,SERVED,CMP-013,95.00,95.00,95.01,3,Highest eligible bid won
+REQ-000418,SERVED,CMP-003,200.00,,150.00,1,Highest eligible bid won
+REQ-000419,SERVED,CMP-011,110.00,,60.00,1,Highest eligible bid won
+REQ-000420,UNFILLED,,,,,1,No bid meets the floor
+REQ-000421,SERVED,CMP-016,125.00,85.00,85.01,3,Highest eligible bid won
+REQ-000422,SERVED,CMP-013,95.00,95.00,95.01,3,Highest eligible bid won
+REQ-000423,UNFILLED,,,,,2,No bid meets the floor
+REQ-000424,SERVED,CMP-016,125.00,70.00,120.01,2,Highest eligible bid won
+REQ-000425,SERVED,CMP-019,95.00,70.00,70.01,2,Highest eligible bid won
+REQ-000426,UNFILLED,,,,,1,No bid meets the floor
+REQ-000427,SERVED,CMP-015,110.00,95.00,95.01,3,Highest eligible bid won
+REQ-000428,SERVED,CMP-013,95.00,70.00,70.01,2,Highest eligible bid won
+REQ-000429,SERVED,CMP-017,160.00,125.00,125.01,5,Highest eligible bid won
+REQ-000430,UNFILLED,,,,,2,No bid meets the floor
+REQ-000431,SERVED,CMP-017,160.00,125.00,125.01,4,Highest eligible bid won
+REQ-000432,SERVED,CMP-019,95.00,85.00,85.01,2,Highest eligible bid won
+REQ-000433,SERVED,CMP-019,95.00,,90.00,1,Highest eligible bid won
+REQ-000434,SERVED,CMP-017,160.00,110.00,110.01,3,Highest eligible bid won
+REQ-000435,SERVED,CMP-017,160.00,110.00,110.01,3,Highest eligible bid won
+REQ-000436,UNFILLED,,,,,1,No bid meets the floor
+REQ-000437,SERVED,CMP-017,160.00,95.00,95.01,4,Highest eligible bid won
+REQ-000438,UNFILLED,,,,,2,No bid meets the floor
+REQ-000439,UNFILLED,,,,,0,No eligible campaigns
+REQ-000440,SERVED,CMP-020,70.00,,60.00,1,Highest eligible bid won
+REQ-000441,SERVED,CMP-016,125.00,70.00,70.01,2,Highest eligible bid won
+REQ-000442,SERVED,CMP-016,125.00,70.00,80.01,2,Highest eligible bid won
+REQ-000443,SERVED,CMP-017,160.00,110.00,110.01,3,Highest eligible bid won
+REQ-000444,SERVED,CMP-013,95.00,70.00,90.01,2,Highest eligible bid won
+REQ-000445,UNFILLED,,,,,0,No eligible campaigns
+REQ-000446,SERVED,CMP-013,95.00,95.00,95.01,3,Highest eligible bid won
+REQ-000447,SERVED,CMP-016,125.00,70.00,90.01,2,Highest eligible bid won
+REQ-000448,SERVED,CMP-019,95.00,85.00,85.01,2,Highest eligible bid won
+REQ-000449,SERVED,CMP-013,95.00,,60.00,1,Highest eligible bid won
+REQ-000450,SERVED,CMP-016,125.00,85.00,90.01,3,Highest eligible bid won
+REQ-000451,SERVED,CMP-010,140.00,125.00,125.01,4,Highest eligible bid won
+REQ-000452,SERVED,CMP-017,160.00,125.00,125.01,5,Highest eligible bid won
+REQ-000453,SERVED,CMP-017,160.00,125.00,125.01,3,Highest eligible bid won
+REQ-000454,UNFILLED,,,,,2,No bid meets the floor
+REQ-000455,SERVED,CMP-016,125.00,95.00,95.01,2,Highest eligible bid won
+REQ-000456,SERVED,CMP-016,125.00,70.00,120.01,2,Highest eligible bid won
+REQ-000457,SERVED,CMP-017,160.00,95.00,95.01,2,Highest eligible bid won
+REQ-000458,SERVED,CMP-015,110.00,95.00,95.01,3,Highest eligible bid won
+REQ-000459,SERVED,CMP-016,125.00,70.00,120.01,2,Highest eligible bid won
+REQ-000460,SERVED,CMP-019,95.00,,60.00,1,Highest eligible bid won
+REQ-000461,SERVED,CMP-011,110.00,,60.00,1,Highest eligible bid won
+REQ-000462,SERVED,CMP-017,160.00,,120.00,1,Highest eligible bid won
+REQ-000463,SERVED,CMP-002,170.00,,150.00,1,Highest eligible bid won
+REQ-000464,UNFILLED,,,,,0,No eligible campaigns
+REQ-000465,SERVED,CMP-002,170.00,,150.00,1,Highest eligible bid won
+REQ-000466,SERVED,CMP-001,150.00,,150.00,1,Highest eligible bid won
+REQ-000467,SERVED,CMP-001,150.00,,150.00,1,Highest eligible bid won
+REQ-000468,SERVED,CMP-001,150.00,,150.00,1,Highest eligible bid won
+REQ-000469,SERVED,CMP-001,150.00,,150.00,1,Highest eligible bid won
+REQ-000470,SERVED,CMP-001,150.00,,150.00,1,Highest eligible bid won
+REQ-000471,SERVED,CMP-001,150.00,,150.00,1,Highest eligible bid won
+REQ-000472,SERVED,CMP-001,150.00,,150.00,1,Highest eligible bid won
+REQ-000473,SERVED,CMP-001,150.00,,150.00,1,Highest eligible bid won
+REQ-000474,SERVED,CMP-001,150.00,,150.00,1,Highest eligible bid won
+REQ-000475,SERVED,CMP-001,150.00,,150.00,1,Highest eligible bid won
+REQ-000476,SERVED,CMP-001,150.00,,150.00,1,Highest eligible bid won
+REQ-000477,SERVED,CMP-001,150.00,,150.00,1,Highest eligible bid won
+REQ-000478,SERVED,CMP-001,150.00,,150.00,1,Highest eligible bid won
+REQ-000479,SERVED,CMP-017,160.00,125.00,125.01,3,Highest eligible bid won
+REQ-000480,SERVED,CMP-001,150.00,,150.00,1,Highest eligible bid won
+REQ-000481,SERVED,CMP-001,150.00,,150.00,1,Highest eligible bid won
+REQ-000482,SERVED,CMP-001,150.00,,150.00,1,Highest eligible bid won
+REQ-000483,SERVED,CMP-001,150.00,,150.00,1,Highest eligible bid won
+REQ-000484,SERVED,CMP-001,150.00,,150.00,1,Highest eligible bid won
+REQ-000485,SERVED,CMP-001,150.00,,150.00,1,Highest eligible bid won
+REQ-000486,SERVED,CMP-001,150.00,,150.00,1,Highest eligible bid won
+REQ-000487,SERVED,CMP-013,95.00,70.00,80.01,2,Highest eligible bid won
+REQ-000488,SERVED,CMP-001,150.00,,150.00,1,Highest eligible bid won
+REQ-000489,SERVED,CMP-001,150.00,,150.00,1,Highest eligible bid won
+REQ-000490,SERVED,CMP-001,150.00,,150.00,1,Highest eligible bid won
+REQ-000491,SERVED,CMP-001,150.00,,150.00,1,Highest eligible bid won
+REQ-000492,SERVED,CMP-001,150.00,,150.00,1,Highest eligible bid won
+REQ-000493,SERVED,CMP-001,150.00,,150.00,1,Highest eligible bid won
+REQ-000494,SERVED,CMP-001,150.00,,150.00,1,Highest eligible bid won
+REQ-000495,SERVED,CMP-001,150.00,,150.00,1,Highest eligible bid won
+REQ-000496,SERVED,CMP-001,150.00,,150.00,1,Highest eligible bid won
+REQ-000497,SERVED,CMP-001,150.00,,150.00,1,Highest eligible bid won
+REQ-000498,SERVED,CMP-001,150.00,,150.00,1,Highest eligible bid won
+REQ-000499,SERVED,CMP-001,150.00,,150.00,1,Highest eligible bid won
+REQ-000500,SERVED,CMP-001,150.00,,150.00,1,Highest eligible bid won
+REQ-000501,SERVED,CMP-019,95.00,70.00,80.01,2,Highest eligible bid won
+REQ-000502,SERVED,CMP-001,150.00,,150.00,1,Highest eligible bid won
+REQ-000503,SERVED,CMP-001,150.00,,150.00,1,Highest eligible bid won
+REQ-000504,SERVED,CMP-001,150.00,,150.00,1,Highest eligible bid won
+REQ-000505,SERVED,CMP-001,150.00,,150.00,1,Highest eligible bid won
+REQ-000506,SERVED,CMP-001,150.00,,150.00,1,Highest eligible bid won
+REQ-000507,SERVED,CMP-001,150.00,,150.00,1,Highest eligible bid won
+REQ-000508,SERVED,CMP-001,150.00,,150.00,1,Highest eligible bid won
+REQ-000509,SERVED,CMP-001,150.00,,150.00,1,Highest eligible bid won
+REQ-000510,SERVED,CMP-001,150.00,,150.00,1,Highest eligible bid won
+REQ-000511,SERVED,CMP-001,150.00,,150.00,1,Highest eligible bid won
+REQ-000512,SERVED,CMP-001,150.00,,150.00,1,Highest eligible bid won
+REQ-000513,SERVED,CMP-001,150.00,,150.00,1,Highest eligible bid won
+REQ-000514,SERVED,CMP-019,95.00,,90.00,1,Highest eligible bid won
+REQ-000515,SERVED,CMP-001,150.00,,150.00,1,Highest eligible bid won
+REQ-000516,SERVED,CMP-001,150.00,,150.00,1,Highest eligible bid won
+REQ-000517,SERVED,CMP-001,150.00,,150.00,1,Highest eligible bid won
+REQ-000518,SERVED,CMP-019,95.00,85.00,85.01,2,Highest eligible bid won
+REQ-000519,UNFILLED,,,,,0,No eligible campaigns
+REQ-000520,SERVED,CMP-001,150.00,,150.00,1,Highest eligible bid won
+REQ-000521,SERVED,CMP-019,95.00,85.00,90.01,2,Highest eligible bid won
+REQ-000522,SERVED,CMP-013,95.00,70.00,90.01,2,Highest eligible bid won
+REQ-000523,UNFILLED,,,,,2,No bid meets the floor
+REQ-000524,SERVED,CMP-017,160.00,110.00,110.01,3,Highest eligible bid won
+REQ-000525,SERVED,CMP-017,160.00,125.00,125.01,4,Highest eligible bid won
+REQ-000526,SERVED,CMP-014,160.00,70.00,70.01,3,Highest eligible bid won
+REQ-000527,UNFILLED,,,,,2,No bid meets the floor
+REQ-000528,SERVED,CMP-014,160.00,160.00,160.01,4,Highest eligible bid won
+REQ-000529,SERVED,CMP-017,160.00,95.00,95.01,2,Highest eligible bid won
+REQ-000530,SERVED,CMP-014,160.00,70.00,120.01,2,Highest eligible bid won
+REQ-000531,SERVED,CMP-014,160.00,,90.00,1,Highest eligible bid won
+REQ-000532,SERVED,CMP-014,160.00,55.00,80.01,2,Highest eligible bid won
+REQ-000533,SERVED,CMP-011,110.00,95.00,95.01,3,Highest eligible bid won
+REQ-000534,SERVED,CMP-016,125.00,85.00,85.01,3,Highest eligible bid won
+REQ-000535,SERVED,CMP-016,125.00,95.00,95.01,2,Highest eligible bid won
+REQ-000536,SERVED,CMP-014,160.00,110.00,110.01,2,Highest eligible bid won
+REQ-000537,SERVED,CMP-014,160.00,70.00,90.01,3,Highest eligible bid won
+REQ-000538,SERVED,CMP-014,160.00,110.00,110.01,3,Highest eligible bid won
+REQ-000539,UNFILLED,,,,,2,No bid meets the floor
+REQ-000540,SERVED,CMP-017,160.00,125.00,125.01,5,Highest eligible bid won
+REQ-000541,SERVED,CMP-019,95.00,85.00,85.01,2,Highest eligible bid won
+REQ-000542,SERVED,CMP-017,160.00,125.00,125.01,5,Highest eligible bid won
+REQ-000543,SERVED,CMP-014,160.00,110.00,110.01,2,Highest eligible bid won
+REQ-000544,SERVED,CMP-013,95.00,,90.00,1,Highest eligible bid won
+REQ-000545,SERVED,CMP-011,110.00,95.00,95.01,3,Highest eligible bid won
+REQ-000546,SERVED,CMP-011,110.00,95.00,95.01,3,Highest eligible bid won
+REQ-000547,SERVED,CMP-017,160.00,125.00,125.01,3,Highest eligible bid won
+REQ-000548,UNFILLED,,,,,1,No bid meets the floor
+REQ-000549,SERVED,CMP-013,95.00,70.00,90.01,2,Highest eligible bid won
+REQ-000550,SERVED,CMP-017,160.00,160.00,160.01,4,Highest eligible bid won
+REQ-000551,SERVED,CMP-013,95.00,70.00,80.01,2,Highest eligible bid won
+REQ-000552,SERVED,CMP-014,160.00,160.00,160.01,3,Highest eligible bid won
+REQ-000553,SERVED,CMP-016,125.00,,90.00,1,Highest eligible bid won
+REQ-000554,SERVED,CMP-017,160.00,95.00,95.01,3,Highest eligible bid won
+REQ-000555,SERVED,CMP-014,160.00,140.00,140.01,3,Highest eligible bid won
+REQ-000556,SERVED,CMP-017,160.00,160.00,160.01,4,Highest eligible bid won
+REQ-000557,SERVED,CMP-016,125.00,70.00,90.01,2,Highest eligible bid won
+REQ-000558,SERVED,CMP-019,95.00,,90.00,1,Highest eligible bid won
+REQ-000559,SERVED,CMP-016,125.00,95.00,95.01,2,Highest eligible bid won
+REQ-000560,SERVED,CMP-014,160.00,70.00,90.01,2,Highest eligible bid won
+REQ-000561,SERVED,CMP-011,110.00,95.00,95.01,2,Highest eligible bid won
+REQ-000562,SERVED,CMP-019,95.00,85.00,85.01,2,Highest eligible bid won
+REQ-000563,SERVED,CMP-016,125.00,,90.00,1,Highest eligible bid won
+REQ-000564,SERVED,CMP-017,160.00,95.00,95.01,2,Highest eligible bid won
+REQ-000565,SERVED,CMP-014,160.00,110.00,110.01,3,Highest eligible bid won
+REQ-000566,SERVED,CMP-017,160.00,110.00,110.01,3,Highest eligible bid won
+REQ-000567,SERVED,CMP-011,110.00,95.00,95.01,3,Highest eligible bid won
+REQ-000568,SERVED,CMP-017,160.00,70.00,120.01,2,Highest eligible bid won
+REQ-000569,SERVED,CMP-019,95.00,,60.00,1,Highest eligible bid won
+REQ-000570,SERVED,CMP-019,95.00,85.00,85.01,2,Highest eligible bid won
+REQ-000571,SERVED,CMP-013,95.00,95.00,95.01,3,Highest eligible bid won
+REQ-000572,SERVED,CMP-018,85.00,70.00,70.01,2,Highest eligible bid won
+REQ-000573,SERVED,CMP-013,95.00,70.00,70.01,2,Highest eligible bid won
+REQ-000574,SERVED,CMP-014,160.00,125.00,125.01,3,Highest eligible bid won
+REQ-000575,SERVED,CMP-017,160.00,125.00,125.01,4,Highest eligible bid won
+REQ-000576,SERVED,CMP-017,160.00,95.00,95.01,2,Highest eligible bid won
+REQ-000577,SERVED,CMP-003,200.00,,150.00,1,Highest eligible bid won
+REQ-000578,SERVED,CMP-014,160.00,110.00,110.01,2,Highest eligible bid won
+REQ-000579,SERVED,CMP-006,125.00,,120.00,1,Highest eligible bid won
+REQ-000580,SERVED,CMP-017,160.00,125.00,125.01,4,Highest eligible bid won
+REQ-000581,SERVED,CMP-013,95.00,95.00,95.01,3,Highest eligible bid won
+REQ-000582,SERVED,CMP-013,95.00,70.00,90.01,2,Highest eligible bid won
+REQ-000583,SERVED,CMP-011,110.00,95.00,95.01,2,Highest eligible bid won
+REQ-000584,SERVED,CMP-013,95.00,70.00,70.01,2,Highest eligible bid won
+REQ-000585,SERVED,CMP-017,160.00,95.00,95.01,3,Highest eligible bid won
+REQ-000586,SERVED,CMP-020,70.00,,60.00,1,Highest eligible bid won
+REQ-000587,SERVED,CMP-003,200.00,,150.00,1,Highest eligible bid won
+REQ-000588,SERVED,CMP-016,125.00,95.00,95.01,2,Highest eligible bid won
+REQ-000589,SERVED,CMP-019,95.00,,90.00,1,Highest eligible bid won
+REQ-000590,SERVED,CMP-011,110.00,,60.00,1,Highest eligible bid won
+REQ-000591,SERVED,CMP-019,95.00,70.00,70.01,2,Highest eligible bid won
+REQ-000592,SERVED,CMP-001,150.00,,150.00,1,Highest eligible bid won
+REQ-000593,SERVED,CMP-011,110.00,95.00,95.01,2,Highest eligible bid won
+REQ-000594,SERVED,CMP-017,160.00,95.00,95.01,2,Highest eligible bid won
+REQ-000595,UNFILLED,,,,,3,No bid meets the floor
+REQ-000596,SERVED,CMP-016,125.00,85.00,85.01,3,Highest eligible bid won
+REQ-000597,SERVED,CMP-019,95.00,85.00,85.01,2,Highest eligible bid won
+REQ-000598,SERVED,CMP-014,160.00,55.00,60.01,2,Highest eligible bid won
+REQ-000599,SERVED,CMP-001,150.00,,150.00,1,Highest eligible bid won
+REQ-000600,SERVED,CMP-011,110.00,95.00,95.01,3,Highest eligible bid won
+REQ-000601,SERVED,CMP-017,160.00,125.00,125.01,3,Highest eligible bid won
+REQ-000602,SERVED,CMP-011,110.00,,60.00,1,Highest eligible bid won
+REQ-000603,SERVED,CMP-014,160.00,,60.00,1,Highest eligible bid won
+REQ-000604,SERVED,CMP-017,160.00,,60.00,1,Highest eligible bid won
+REQ-000605,SERVED,CMP-003,200.00,,150.00,1,Highest eligible bid won
+REQ-000606,SERVED,CMP-016,125.00,85.00,85.01,3,Highest eligible bid won
+REQ-000607,UNFILLED,,,,,2,No bid meets the floor
+REQ-000608,SERVED,CMP-017,160.00,125.00,125.01,4,Highest eligible bid won
+REQ-000609,SERVED,CMP-019,95.00,70.00,80.01,2,Highest eligible bid won
+REQ-000610,SERVED,CMP-014,160.00,70.00,70.01,3,Highest eligible bid won
+REQ-000611,UNFILLED,,,,,2,No bid meets the floor
+REQ-000612,SERVED,CMP-003,200.00,,150.00,1,Highest eligible bid won
+REQ-000613,SERVED,CMP-013,95.00,,90.00,1,Highest eligible bid won
+REQ-000614,SERVED,CMP-017,160.00,95.00,95.01,2,Highest eligible bid won
+REQ-000615,SERVED,CMP-016,125.00,95.00,95.01,2,Highest eligible bid won
+REQ-000616,SERVED,CMP-013,95.00,95.00,95.01,3,Highest eligible bid won
+REQ-000617,SERVED,CMP-011,110.00,95.00,95.01,2,Highest eligible bid won
+REQ-000618,SERVED,CMP-019,95.00,,60.00,1,Highest eligible bid won
+REQ-000619,UNFILLED,,,,,0,No eligible campaigns
+REQ-000620,SERVED,CMP-002,170.00,,150.00,1,Highest eligible bid won
+REQ-000621,SERVED,CMP-014,160.00,110.00,110.01,2,Highest eligible bid won
+REQ-000622,SERVED,CMP-017,160.00,110.00,110.01,3,Highest eligible bid won
+REQ-000623,SERVED,CMP-014,160.00,70.00,120.01,3,Highest eligible bid won
+REQ-000624,SERVED,CMP-019,95.00,,60.00,1,Highest eligible bid won
+REQ-000625,SERVED,CMP-013,95.00,95.00,95.01,3,Highest eligible bid won
+REQ-000626,SERVED,CMP-014,160.00,125.00,125.01,4,Highest eligible bid won
+REQ-000627,SERVED,CMP-013,95.00,95.00,95.01,3,Highest eligible bid won
+REQ-000628,SERVED,CMP-019,95.00,95.00,95.01,3,Highest eligible bid won
+REQ-000629,SERVED,CMP-016,125.00,70.00,70.01,2,Highest eligible bid won
+REQ-000630,SERVED,CMP-013,95.00,70.00,80.01,2,Highest eligible bid won
+REQ-000631,SERVED,CMP-016,125.00,95.00,120.01,2,Highest eligible bid won
+REQ-000632,SERVED,CMP-014,160.00,125.00,125.01,4,Highest eligible bid won
+REQ-000633,SERVED,CMP-010,140.00,,60.00,1,Highest eligible bid won
+REQ-000634,SERVED,CMP-017,160.00,95.00,95.01,2,Highest eligible bid won
+REQ-000635,SERVED,CMP-014,160.00,95.00,95.01,2,Highest eligible bid won
+REQ-000636,SERVED,CMP-015,110.00,95.00,95.01,3,Highest eligible bid won
+REQ-000637,SERVED,CMP-014,160.00,70.00,90.01,2,Highest eligible bid won
+REQ-000638,SERVED,CMP-019,95.00,,60.00,1,Highest eligible bid won
+REQ-000639,SERVED,CMP-016,125.00,95.00,95.01,2,Highest eligible bid won
+REQ-000640,SERVED,CMP-014,160.00,,80.00,1,Highest eligible bid won
+REQ-000641,SERVED,CMP-019,95.00,85.00,85.01,2,Highest eligible bid won
+REQ-000642,SERVED,CMP-017,160.00,95.00,95.01,2,Highest eligible bid won
+REQ-000643,SERVED,CMP-011,110.00,,80.00,1,Highest eligible bid won
+REQ-000644,SERVED,CMP-017,160.00,110.00,110.01,3,Highest eligible bid won
+REQ-000645,SERVED,CMP-017,160.00,110.00,110.01,3,Highest eligible bid won
+REQ-000646,SERVED,CMP-014,160.00,70.00,90.01,3,Highest eligible bid won
+REQ-000647,SERVED,CMP-017,160.00,95.00,95.01,2,Highest eligible bid won
+REQ-000648,SERVED,CMP-003,200.00,,150.00,1,Highest eligible bid won
+REQ-000649,SERVED,CMP-017,160.00,95.00,95.01,3,Highest eligible bid won
+REQ-000650,SERVED,CMP-017,160.00,110.00,110.01,3,Highest eligible bid won
+REQ-000651,SERVED,CMP-011,110.00,95.00,95.01,2,Highest eligible bid won
+REQ-000652,SERVED,CMP-003,200.00,,150.00,1,Highest eligible bid won
+REQ-000653,SERVED,CMP-013,95.00,70.00,70.01,2,Highest eligible bid won
+REQ-000654,SERVED,CMP-019,95.00,,90.00,1,Highest eligible bid won
+REQ-000655,SERVED,CMP-011,110.00,95.00,95.01,3,Highest eligible bid won
+REQ-000656,SERVED,CMP-017,160.00,95.00,95.01,2,Highest eligible bid won
+REQ-000657,SERVED,CMP-011,110.00,95.00,95.01,3,Highest eligible bid won
+REQ-000658,SERVED,CMP-011,110.00,95.00,95.01,3,Highest eligible bid won
+REQ-000659,SERVED,CMP-014,160.00,,120.00,1,Highest eligible bid won
+REQ-000660,UNFILLED,,,,,0,No eligible campaigns
+REQ-000661,SERVED,CMP-003,200.00,,150.00,1,Highest eligible bid won
+REQ-000662,UNFILLED,,,,,1,No bid meets the floor
+REQ-000663,SERVED,CMP-020,70.00,,60.00,1,Highest eligible bid won
+REQ-000664,SERVED,CMP-019,95.00,,60.00,1,Highest eligible bid won
+REQ-000665,UNFILLED,,,,,2,No bid meets the floor
+REQ-000666,SERVED,CMP-014,160.00,70.00,90.01,3,Highest eligible bid won
+REQ-000667,SERVED,CMP-016,125.00,70.00,90.01,2,Highest eligible bid won
+REQ-000668,SERVED,CMP-017,160.00,95.00,95.01,2,Highest eligible bid won
+REQ-000669,SERVED,CMP-014,160.00,110.00,110.01,3,Highest eligible bid won
+REQ-000670,SERVED,CMP-013,95.00,70.00,70.01,2,Highest eligible bid won
+REQ-000671,SERVED,CMP-017,160.00,95.00,95.01,2,Highest eligible bid won
+REQ-000672,SERVED,CMP-017,160.00,,60.00,1,Highest eligible bid won
+REQ-000673,SERVED,CMP-016,125.00,70.00,90.01,2,Highest eligible bid won
+REQ-000674,SERVED,CMP-017,160.00,,120.00,1,Highest eligible bid won
+REQ-000675,SERVED,CMP-017,160.00,95.00,95.01,2,Highest eligible bid won
+REQ-000676,SERVED,CMP-017,160.00,125.00,125.01,3,Highest eligible bid won
+REQ-000677,SERVED,CMP-003,200.00,,150.00,1,Highest eligible bid won
+REQ-000678,SERVED,CMP-017,160.00,95.00,120.01,2,Highest eligible bid won
+REQ-000679,SERVED,CMP-019,95.00,,60.00,1,Highest eligible bid won
+REQ-000680,SERVED,CMP-013,95.00,70.00,70.01,2,Highest eligible bid won
+REQ-000681,SERVED,CMP-011,110.00,95.00,95.01,2,Highest eligible bid won
+REQ-000682,SERVED,CMP-017,160.00,95.00,120.01,2,Highest eligible bid won
+REQ-000683,SERVED,CMP-014,160.00,125.00,125.01,3,Highest eligible bid won
+REQ-000684,SERVED,CMP-017,160.00,125.00,125.01,5,Highest eligible bid won
+REQ-000685,SERVED,CMP-017,160.00,110.00,110.01,3,Highest eligible bid won
+REQ-000686,SERVED,CMP-014,160.00,70.00,70.01,3,Highest eligible bid won
+REQ-000687,SERVED,CMP-002,170.00,,150.00,1,Highest eligible bid won
+REQ-000688,SERVED,CMP-014,160.00,110.00,110.01,3,Highest eligible bid won
+REQ-000689,UNFILLED,,,,,0,No eligible campaigns
+REQ-000690,SERVED,CMP-017,160.00,95.00,95.01,2,Highest eligible bid won
+REQ-000691,UNFILLED,,,,,3,No bid meets the floor
+REQ-000692,SERVED,CMP-014,160.00,70.00,70.01,3,Highest eligible bid won
+REQ-000693,SERVED,CMP-003,200.00,,150.00,1,Highest eligible bid won
+REQ-000694,SERVED,CMP-013,95.00,95.00,95.01,3,Highest eligible bid won
+REQ-000695,SERVED,CMP-014,160.00,110.00,110.01,2,Highest eligible bid won
+REQ-000696,SERVED,CMP-017,160.00,70.00,70.01,2,Highest eligible bid won
+REQ-000697,SERVED,CMP-014,160.00,110.00,110.01,3,Highest eligible bid won
+REQ-000698,SERVED,CMP-016,125.00,70.00,120.01,2,Highest eligible bid won
+REQ-000699,SERVED,CMP-013,95.00,70.00,90.01,2,Highest eligible bid won
+REQ-000700,SERVED,CMP-019,95.00,55.00,60.01,2,Highest eligible bid won
+REQ-000701,SERVED,CMP-017,160.00,125.00,125.01,4,Highest eligible bid won
+REQ-000702,SERVED,CMP-017,160.00,125.00,125.01,4,Highest eligible bid won
+REQ-000703,SERVED,CMP-017,160.00,125.00,125.01,5,Highest eligible bid won
+REQ-000704,SERVED,CMP-011,110.00,95.00,95.01,3,Highest eligible bid won
+REQ-000705,SERVED,CMP-019,95.00,85.00,85.01,2,Highest eligible bid won
+REQ-000706,SERVED,CMP-017,160.00,125.00,125.01,5,Highest eligible bid won
+REQ-000707,SERVED,CMP-019,95.00,,60.00,1,Highest eligible bid won
+REQ-000708,UNFILLED,,,,,1,No bid meets the floor
+REQ-000709,SERVED,CMP-013,95.00,95.00,95.01,3,Highest eligible bid won
+REQ-000710,SERVED,CMP-001,150.00,,150.00,1,Highest eligible bid won
+REQ-000711,SERVED,CMP-017,160.00,95.00,95.01,2,Highest eligible bid won
+REQ-000712,SERVED,CMP-011,110.00,,60.00,1,Highest eligible bid won
+REQ-000713,SERVED,CMP-014,160.00,160.00,160.01,4,Highest eligible bid won
+REQ-000714,SERVED,CMP-011,110.00,95.00,95.01,3,Highest eligible bid won
+REQ-000715,SERVED,CMP-014,160.00,110.00,110.01,2,Highest eligible bid won
+REQ-000716,SERVED,CMP-019,95.00,,80.00,1,Highest eligible bid won
+REQ-000717,SERVED,CMP-016,125.00,95.00,95.01,2,Highest eligible bid won
+REQ-000718,SERVED,CMP-016,125.00,70.00,70.01,2,Highest eligible bid won
+REQ-000719,SERVED,CMP-020,70.00,,60.00,1,Highest eligible bid won
+REQ-000720,SERVED,CMP-013,95.00,95.00,95.01,3,Highest eligible bid won
+REQ-000721,SERVED,CMP-015,110.00,95.00,95.01,3,Highest eligible bid won
+REQ-000722,SERVED,CMP-017,160.00,125.00,125.01,4,Highest eligible bid won
+REQ-000723,SERVED,CMP-017,160.00,125.00,125.01,5,Highest eligible bid won
+REQ-000724,SERVED,CMP-016,125.00,70.00,90.01,2,Highest eligible bid won
+REQ-000725,SERVED,CMP-017,160.00,,120.00,1,Highest eligible bid won
+REQ-000726,SERVED,CMP-019,95.00,70.00,70.01,2,Highest eligible bid won
+REQ-000727,SERVED,CMP-019,95.00,55.00,60.01,2,Highest eligible bid won
+REQ-000728,SERVED,CMP-016,125.00,95.00,95.01,2,Highest eligible bid won
+REQ-000729,SERVED,CMP-014,160.00,110.00,110.01,3,Highest eligible bid won
+REQ-000730,UNFILLED,,,,,1,No bid meets the floor
+REQ-000731,SERVED,CMP-014,160.00,110.00,110.01,3,Highest eligible bid won
+REQ-000732,SERVED,CMP-003,200.00,,150.00,1,Highest eligible bid won
+REQ-000733,SERVED,CMP-016,125.00,70.00,70.01,2,Highest eligible bid won
+REQ-000734,SERVED,CMP-011,110.00,,60.00,1,Highest eligible bid won
+REQ-000735,SERVED,CMP-017,160.00,95.00,120.01,4,Highest eligible bid won
+REQ-000736,SERVED,CMP-014,160.00,160.00,160.01,4,Highest eligible bid won
+REQ-000737,SERVED,CMP-016,125.00,,80.00,1,Highest eligible bid won
+REQ-000738,SERVED,CMP-017,160.00,95.00,95.01,2,Highest eligible bid won
+REQ-000739,SERVED,CMP-017,160.00,95.00,95.01,2,Highest eligible bid won
+REQ-000740,SERVED,CMP-006,125.00,,120.00,1,Highest eligible bid won
+REQ-000741,SERVED,CMP-017,160.00,125.00,125.01,5,Highest eligible bid won
+REQ-000742,SERVED,CMP-017,160.00,125.00,125.01,5,Highest eligible bid won
+REQ-000743,SERVED,CMP-015,110.00,95.00,95.01,3,Highest eligible bid won
+REQ-000744,SERVED,CMP-006,125.00,,120.00,1,Highest eligible bid won
+REQ-000745,SERVED,CMP-014,160.00,,60.00,1,Highest eligible bid won
+REQ-000746,SERVED,CMP-016,125.00,70.00,80.01,3,Highest eligible bid won
+REQ-000747,SERVED,CMP-014,160.00,110.00,110.01,2,Highest eligible bid won
+REQ-000748,SERVED,CMP-019,95.00,70.00,80.01,2,Highest eligible bid won
+REQ-000749,SERVED,CMP-014,160.00,110.00,110.01,2,Highest eligible bid won
+REQ-000750,SERVED,CMP-013,95.00,95.00,95.01,3,Highest eligible bid won
+REQ-000751,SERVED,CMP-015,110.00,95.00,95.01,3,Highest eligible bid won
+REQ-000752,SERVED,CMP-017,160.00,110.00,110.01,3,Highest eligible bid won
+REQ-000753,SERVED,CMP-017,160.00,95.00,95.01,3,Highest eligible bid won
+REQ-000754,SERVED,CMP-014,160.00,95.00,95.01,2,Highest eligible bid won
+REQ-000755,SERVED,CMP-017,160.00,125.00,125.01,5,Highest eligible bid won
+REQ-000756,SERVED,CMP-017,160.00,95.00,95.01,2,Highest eligible bid won
+REQ-000757,SERVED,CMP-020,70.00,,60.00,1,Highest eligible bid won
+REQ-000758,SERVED,CMP-017,160.00,110.00,120.01,3,Highest eligible bid won
+REQ-000759,SERVED,CMP-019,95.00,85.00,85.01,2,Highest eligible bid won
+REQ-000760,SERVED,CMP-013,95.00,70.00,70.01,2,Highest eligible bid won
+REQ-000761,SERVED,CMP-017,160.00,95.00,95.01,2,Highest eligible bid won
+REQ-000762,SERVED,CMP-017,160.00,125.00,125.01,3,Highest eligible bid won
+REQ-000763,SERVED,CMP-014,160.00,55.00,90.01,2,Highest eligible bid won
+REQ-000764,SERVED,CMP-006,125.00,,120.00,1,Highest eligible bid won
+REQ-000765,SERVED,CMP-014,160.00,160.00,160.01,3,Highest eligible bid won
+REQ-000766,SERVED,CMP-014,160.00,70.00,70.01,3,Highest eligible bid won
+REQ-000767,SERVED,CMP-019,95.00,85.00,85.01,2,Highest eligible bid won
+REQ-000768,SERVED,CMP-014,160.00,125.00,125.01,4,Highest eligible bid won
+REQ-000769,SERVED,CMP-014,160.00,125.00,125.01,3,Highest eligible bid won
+REQ-000770,SERVED,CMP-016,125.00,95.00,120.01,2,Highest eligible bid won
+REQ-000771,SERVED,CMP-017,160.00,95.00,120.01,2,Highest eligible bid won
+REQ-000772,SERVED,CMP-013,95.00,70.00,70.01,2,Highest eligible bid won
+REQ-000773,SERVED,CMP-014,160.00,70.00,90.01,3,Highest eligible bid won
+REQ-000774,UNFILLED,,,,,3,No bid meets the floor
+REQ-000775,SERVED,CMP-004,180.00,90.00,120.01,2,Highest eligible bid won
+REQ-000776,SERVED,CMP-003,200.00,,150.00,1,Highest eligible bid won
+REQ-000777,SERVED,CMP-014,160.00,70.00,90.01,3,Highest eligible bid won
+REQ-000778,SERVED,CMP-017,160.00,70.00,120.01,2,Highest eligible bid won
+REQ-000779,SERVED,CMP-016,125.00,70.00,70.01,2,Highest eligible bid won
+REQ-000780,SERVED,CMP-006,125.00,,120.00,1,Highest eligible bid won
+REQ-000781,UNFILLED,,,,,3,No bid meets the floor
+REQ-000782,SERVED,CMP-016,125.00,95.00,120.01,2,Highest eligible bid won
+REQ-000783,SERVED,CMP-016,125.00,,60.00,1,Highest eligible bid won
+REQ-000784,SERVED,CMP-017,160.00,95.00,95.01,2,Highest eligible bid won
+REQ-000785,SERVED,CMP-014,160.00,125.00,125.01,4,Highest eligible bid won
+REQ-000786,SERVED,CMP-017,160.00,125.00,125.01,3,Highest eligible bid won
+REQ-000787,SERVED,CMP-014,160.00,125.00,125.01,4,Highest eligible bid won
+REQ-000788,SERVED,CMP-016,125.00,70.00,120.01,2,Highest eligible bid won
+REQ-000789,UNFILLED,,,,,2,No bid meets the floor
+REQ-000790,SERVED,CMP-017,160.00,110.00,110.01,3,Highest eligible bid won
+REQ-000791,SERVED,CMP-016,125.00,70.00,90.01,2,Highest eligible bid won
+REQ-000792,SERVED,CMP-019,95.00,,80.00,1,Highest eligible bid won
+REQ-000793,SERVED,CMP-006,125.00,,120.00,1,Highest eligible bid won
+REQ-000794,SERVED,CMP-017,160.00,125.00,125.01,3,Highest eligible bid won
+REQ-000795,SERVED,CMP-019,95.00,55.00,60.01,2,Highest eligible bid won
+REQ-000796,SERVED,CMP-011,110.00,95.00,95.01,3,Highest eligible bid won
+REQ-000797,SERVED,CMP-016,125.00,70.00,70.01,2,Highest eligible bid won
+REQ-000798,SERVED,CMP-019,95.00,,60.00,1,Highest eligible bid won
+REQ-000799,SERVED,CMP-017,160.00,110.00,120.01,3,Highest eligible bid won
+REQ-000800,UNFILLED,,,,,1,No bid meets the floor
+REQ-000801,SERVED,CMP-014,160.00,70.00,80.01,3,Highest eligible bid won
+REQ-000802,UNFILLED,,,,,0,No eligible campaigns
+REQ-000803,UNFILLED,,,,,3,No bid meets the floor
+REQ-000804,SERVED,CMP-011,110.00,95.00,95.01,3,Highest eligible bid won
+REQ-000805,SERVED,CMP-013,95.00,95.00,95.01,3,Highest eligible bid won
+REQ-000806,UNFILLED,,,,,0,No eligible campaigns
+REQ-000807,SERVED,CMP-015,110.00,95.00,95.01,3,Highest eligible bid won
+REQ-000808,SERVED,CMP-019,95.00,70.00,70.01,2,Highest eligible bid won
+REQ-000809,SERVED,CMP-018,85.00,70.00,70.01,2,Highest eligible bid won
+REQ-000810,SERVED,CMP-016,125.00,95.00,95.01,2,Highest eligible bid won
+REQ-000811,SERVED,CMP-016,125.00,70.00,90.01,2,Highest eligible bid won
+REQ-000812,SERVED,CMP-019,95.00,,90.00,1,Highest eligible bid won
+REQ-000813,SERVED,CMP-013,95.00,70.00,70.01,2,Highest eligible bid won
+REQ-000814,SERVED,CMP-014,160.00,110.00,110.01,3,Highest eligible bid won
+REQ-000815,SERVED,CMP-013,95.00,,90.00,1,Highest eligible bid won
+REQ-000816,SERVED,CMP-013,95.00,95.00,95.01,3,Highest eligible bid won
+REQ-000817,UNFILLED,,,,,2,No bid meets the floor
+REQ-000818,SERVED,CMP-017,160.00,125.00,125.01,3,Highest eligible bid won
+REQ-000819,SERVED,CMP-017,160.00,110.00,110.01,3,Highest eligible bid won
+REQ-000820,SERVED,CMP-019,95.00,70.00,80.01,2,Highest eligible bid won
+REQ-000821,SERVED,CMP-011,110.00,95.00,95.01,2,Highest eligible bid won
+REQ-000822,SERVED,CMP-017,160.00,125.00,125.01,5,Highest eligible bid won
+REQ-000823,SERVED,CMP-006,125.00,,120.00,1,Highest eligible bid won
+REQ-000824,SERVED,CMP-006,125.00,,120.00,1,Highest eligible bid won
+REQ-000825,SERVED,CMP-017,160.00,95.00,95.01,2,Highest eligible bid won
+REQ-000826,SERVED,CMP-017,160.00,110.00,110.01,3,Highest eligible bid won
+REQ-000827,SERVED,CMP-017,160.00,110.00,110.01,3,Highest eligible bid won
+REQ-000828,SERVED,CMP-016,125.00,70.00,90.01,2,Highest eligible bid won
+REQ-000829,UNFILLED,,,,,3,No bid meets the floor
+REQ-000830,SERVED,CMP-019,95.00,,60.00,1,Highest eligible bid won
+REQ-000831,SERVED,CMP-014,160.00,110.00,110.01,3,Highest eligible bid won
+REQ-000832,SERVED,CMP-017,160.00,125.00,125.01,3,Highest eligible bid won
+REQ-000833,SERVED,CMP-014,160.00,110.00,110.01,2,Highest eligible bid won
+REQ-000834,SERVED,CMP-016,125.00,95.00,95.01,2,Highest eligible bid won
+REQ-000835,SERVED,CMP-013,95.00,70.00,70.01,2,Highest eligible bid won
+REQ-000836,SERVED,CMP-016,125.00,85.00,85.01,3,Highest eligible bid won
+REQ-000837,SERVED,CMP-016,125.00,70.00,70.01,2,Highest eligible bid won
+REQ-000838,SERVED,CMP-002,170.00,,150.00,1,Highest eligible bid won
+REQ-000839,SERVED,CMP-013,95.00,70.00,90.01,2,Highest eligible bid won
+REQ-000840,SERVED,CMP-011,110.00,95.00,95.01,3,Highest eligible bid won
+REQ-000841,SERVED,CMP-013,95.00,95.00,95.01,3,Highest eligible bid won
+REQ-000842,SERVED,CMP-014,160.00,140.00,140.01,5,Highest eligible bid won
+REQ-000843,UNFILLED,,,,,2,No bid meets the floor
+REQ-000844,UNFILLED,,,,,3,No bid meets the floor
+REQ-000845,SERVED,CMP-006,125.00,,120.00,1,Highest eligible bid won
+REQ-000846,SERVED,CMP-014,160.00,110.00,110.01,2,Highest eligible bid won
+REQ-000847,SERVED,CMP-013,95.00,70.00,70.01,2,Highest eligible bid won
+REQ-000848,SERVED,CMP-017,160.00,95.00,95.01,2,Highest eligible bid won
+REQ-000849,SERVED,CMP-017,160.00,95.00,95.01,2,Highest eligible bid won
+REQ-000850,SERVED,CMP-017,160.00,95.00,95.01,2,Highest eligible bid won
+REQ-000851,SERVED,CMP-014,160.00,70.00,90.01,3,Highest eligible bid won
+REQ-000852,SERVED,CMP-014,160.00,110.00,110.01,3,Highest eligible bid won
+REQ-000853,SERVED,CMP-014,160.00,125.00,125.01,4,Highest eligible bid won
+REQ-000854,SERVED,CMP-010,140.00,125.00,125.01,4,Highest eligible bid won
+REQ-000855,SERVED,CMP-018,85.00,70.00,70.01,2,Highest eligible bid won
+REQ-000856,SERVED,CMP-013,95.00,70.00,80.01,2,Highest eligible bid won
+REQ-000857,SERVED,CMP-001,150.00,,150.00,1,Highest eligible bid won
+REQ-000858,SERVED,CMP-013,95.00,70.00,80.01,2,Highest eligible bid won
+REQ-000859,SERVED,CMP-003,200.00,,150.00,1,Highest eligible bid won
+REQ-000860,SERVED,CMP-014,160.00,125.00,125.01,4,Highest eligible bid won
+REQ-000861,SERVED,CMP-014,160.00,110.00,110.01,3,Highest eligible bid won
+REQ-000862,SERVED,CMP-014,160.00,70.00,80.01,3,Highest eligible bid won
+REQ-000863,SERVED,CMP-017,160.00,125.00,125.01,4,Highest eligible bid won
+REQ-000864,SERVED,CMP-019,95.00,,80.00,1,Highest eligible bid won
+REQ-000865,SERVED,CMP-016,125.00,95.00,95.01,4,Highest eligible bid won
+REQ-000866,SERVED,CMP-006,125.00,,120.00,1,Highest eligible bid won
+REQ-000867,SERVED,CMP-017,160.00,125.00,125.01,4,Highest eligible bid won
+REQ-000868,SERVED,CMP-014,160.00,110.00,120.01,2,Highest eligible bid won
+REQ-000869,SERVED,CMP-016,125.00,70.00,70.01,2,Highest eligible bid won
+REQ-000870,SERVED,CMP-013,95.00,,80.00,1,Highest eligible bid won
+REQ-000871,SERVED,CMP-013,95.00,70.00,80.01,2,Highest eligible bid won
+REQ-000872,SERVED,CMP-019,95.00,,90.00,1,Highest eligible bid won
+REQ-000873,SERVED,CMP-017,160.00,95.00,95.01,2,Highest eligible bid won
+REQ-000874,SERVED,CMP-020,70.00,,60.00,1,Highest eligible bid won
+REQ-000875,SERVED,CMP-017,160.00,110.00,110.01,3,Highest eligible bid won
+REQ-000876,SERVED,CMP-017,160.00,125.00,125.01,3,Highest eligible bid won
+REQ-000877,SERVED,CMP-017,160.00,110.00,120.01,3,Highest eligible bid won
+REQ-000878,SERVED,CMP-002,170.00,,150.00,1,Highest eligible bid won
+REQ-000879,SERVED,CMP-014,160.00,110.00,110.01,3,Highest eligible bid won
+REQ-000880,UNFILLED,,,,,3,No bid meets the floor
+REQ-000881,UNFILLED,,,,,1,No bid meets the floor
+REQ-000882,SERVED,CMP-014,160.00,125.00,125.01,3,Highest eligible bid won
+REQ-000883,UNFILLED,,,,,1,No bid meets the floor
+REQ-000884,SERVED,CMP-011,110.00,95.00,95.01,2,Highest eligible bid won
+REQ-000885,SERVED,CMP-011,110.00,,60.00,1,Highest eligible bid won
+REQ-000886,SERVED,CMP-013,95.00,70.00,80.01,2,Highest eligible bid won
+REQ-000887,SERVED,CMP-013,95.00,70.00,70.01,2,Highest eligible bid won
+REQ-000888,SERVED,CMP-017,160.00,110.00,110.01,3,Highest eligible bid won
+REQ-000889,SERVED,CMP-003,200.00,,150.00,1,Highest eligible bid won
+REQ-000890,UNFILLED,,,,,1,No bid meets the floor
+REQ-000891,SERVED,CMP-016,125.00,85.00,85.01,3,Highest eligible bid won
+REQ-000892,SERVED,CMP-014,160.00,70.00,70.01,3,Highest eligible bid won
+REQ-000893,SERVED,CMP-013,95.00,70.00,70.01,2,Highest eligible bid won
+REQ-000894,SERVED,CMP-002,170.00,,150.00,1,Highest eligible bid won
+REQ-000895,SERVED,CMP-017,160.00,125.00,125.01,3,Highest eligible bid won
+REQ-000896,SERVED,CMP-014,160.00,110.00,120.01,3,Highest eligible bid won
+REQ-000897,SERVED,CMP-017,160.00,95.00,95.01,2,Highest eligible bid won
+REQ-000898,SERVED,CMP-014,160.00,110.00,110.01,2,Highest eligible bid won
+REQ-000899,UNFILLED,,,,,0,No eligible campaigns
+REQ-000900,SERVED,CMP-017,160.00,95.00,95.01,2,Highest eligible bid won
+REQ-000901,SERVED,CMP-011,110.00,95.00,95.01,2,Highest eligible bid won
+REQ-000902,SERVED,CMP-019,95.00,95.00,95.01,3,Highest eligible bid won
+REQ-000903,SERVED,CMP-017,160.00,125.00,125.01,5,Highest eligible bid won
+REQ-000904,UNFILLED,,,,,1,No bid meets the floor
+REQ-000905,SERVED,CMP-003,200.00,,150.00,1,Highest eligible bid won
+REQ-000906,SERVED,CMP-014,160.00,,60.00,1,Highest eligible bid won
+REQ-000907,SERVED,CMP-017,160.00,95.00,95.01,2,Highest eligible bid won
+REQ-000908,SERVED,CMP-016,125.00,85.00,85.01,3,Highest eligible bid won
+REQ-000909,SERVED,CMP-019,95.00,,80.00,1,Highest eligible bid won
+REQ-000910,SERVED,CMP-016,125.00,85.00,90.01,3,Highest eligible bid won
+REQ-000911,SERVED,CMP-019,95.00,55.00,80.01,2,Highest eligible bid won
+REQ-000912,SERVED,CMP-019,95.00,,60.00,1,Highest eligible bid won
+REQ-000913,SERVED,CMP-017,160.00,95.00,95.01,2,Highest eligible bid won
+REQ-000914,SERVED,CMP-017,160.00,125.00,125.01,3,Highest eligible bid won
+REQ-000915,SERVED,CMP-014,160.00,110.00,110.01,2,Highest eligible bid won
+REQ-000916,SERVED,CMP-017,160.00,95.00,120.01,2,Highest eligible bid won
+REQ-000917,SERVED,CMP-019,95.00,95.00,95.01,3,Highest eligible bid won
+REQ-000918,SERVED,CMP-017,160.00,125.00,125.01,3,Highest eligible bid won
+REQ-000919,SERVED,CMP-017,160.00,125.00,125.01,5,Highest eligible bid won
+REQ-000920,SERVED,CMP-013,95.00,95.00,95.01,3,Highest eligible bid won
+REQ-000921,SERVED,CMP-014,160.00,160.00,160.01,4,Highest eligible bid won
+REQ-000922,SERVED,CMP-019,95.00,,80.00,1,Highest eligible bid won
+REQ-000923,SERVED,CMP-014,160.00,125.00,125.01,4,Highest eligible bid won
+REQ-000924,SERVED,CMP-017,160.00,125.00,125.01,4,Highest eligible bid won
+REQ-000925,SERVED,CMP-001,150.00,,150.00,1,Highest eligible bid won
+REQ-000926,SERVED,CMP-016,125.00,,120.00,1,Highest eligible bid won
+REQ-000927,SERVED,CMP-017,160.00,125.00,125.01,3,Highest eligible bid won
+REQ-000928,SERVED,CMP-016,125.00,95.00,120.01,2,Highest eligible bid won
+REQ-000929,SERVED,CMP-016,125.00,95.00,95.01,4,Highest eligible bid won
+REQ-000930,SERVED,CMP-016,125.00,70.00,90.01,2,Highest eligible bid won
+REQ-000931,SERVED,CMP-019,95.00,,60.00,1,Highest eligible bid won
+REQ-000932,SERVED,CMP-017,160.00,125.00,125.01,3,Highest eligible bid won
+REQ-000933,SERVED,CMP-017,160.00,125.00,125.01,4,Highest eligible bid won
+REQ-000934,SERVED,CMP-016,125.00,85.00,120.01,3,Highest eligible bid won
+REQ-000935,UNFILLED,,,,,2,No bid meets the floor
+REQ-000936,SERVED,CMP-019,95.00,85.00,85.01,2,Highest eligible bid won
+REQ-000937,SERVED,CMP-017,160.00,110.00,110.01,3,Highest eligible bid won
+REQ-000938,SERVED,CMP-017,160.00,95.00,95.01,2,Highest eligible bid won
+REQ-000939,SERVED,CMP-006,125.00,,120.00,1,Highest eligible bid won
+REQ-000940,SERVED,CMP-019,95.00,70.00,70.01,2,Highest eligible bid won
+REQ-000941,SERVED,CMP-017,160.00,95.00,95.01,2,Highest eligible bid won
+REQ-000942,SERVED,CMP-017,160.00,125.00,125.01,5,Highest eligible bid won
+REQ-000943,UNFILLED,,,,,2,No bid meets the floor
+REQ-000944,UNFILLED,,,,,2,No bid meets the floor
+REQ-000945,SERVED,CMP-013,95.00,,60.00,1,Highest eligible bid won
+REQ-000946,SERVED,CMP-013,95.00,70.00,70.01,2,Highest eligible bid won
+REQ-000947,SERVED,CMP-017,160.00,125.00,125.01,3,Highest eligible bid won
+REQ-000948,SERVED,CMP-016,125.00,70.00,70.01,2,Highest eligible bid won
+REQ-000949,SERVED,CMP-019,95.00,,60.00,1,Highest eligible bid won
+REQ-000950,SERVED,CMP-014,160.00,125.00,125.01,4,Highest eligible bid won
+REQ-000951,SERVED,CMP-013,95.00,70.00,90.01,2,Highest eligible bid won
+REQ-000952,SERVED,CMP-002,170.00,,150.00,1,Highest eligible bid won
+REQ-000953,SERVED,CMP-017,160.00,125.00,125.01,5,Highest eligible bid won
+REQ-000954,SERVED,CMP-015,110.00,95.00,95.01,3,Highest eligible bid won
+REQ-000955,SERVED,CMP-016,125.00,85.00,85.01,3,Highest eligible bid won
+REQ-000956,SERVED,CMP-013,95.00,70.00,90.01,2,Highest eligible bid won
+REQ-000957,SERVED,CMP-017,160.00,,60.00,1,Highest eligible bid won
+REQ-000958,SERVED,CMP-015,110.00,95.00,95.01,3,Highest eligible bid won
+REQ-000959,UNFILLED,,,,,0,No eligible campaigns
+REQ-000960,SERVED,CMP-017,160.00,,120.00,1,Highest eligible bid won
+REQ-000961,SERVED,CMP-011,110.00,,60.00,1,Highest eligible bid won
+REQ-000962,SERVED,CMP-017,160.00,95.00,95.01,2,Highest eligible bid won
+REQ-000963,SERVED,CMP-014,160.00,110.00,110.01,3,Highest eligible bid won
+REQ-000964,SERVED,CMP-013,95.00,70.00,70.01,2,Highest eligible bid won
+REQ-000965,SERVED,CMP-013,95.00,,60.00,1,Highest eligible bid won
+REQ-000966,SERVED,CMP-004,180.00,90.00,120.01,2,Highest eligible bid won
+REQ-000967,SERVED,CMP-016,125.00,,60.00,1,Highest eligible bid won
+REQ-000968,SERVED,CMP-016,125.00,85.00,85.01,3,Highest eligible bid won
+REQ-000969,SERVED,CMP-014,160.00,125.00,125.01,4,Highest eligible bid won
+REQ-000970,SERVED,CMP-004,180.00,90.00,120.01,2,Highest eligible bid won
+REQ-000971,SERVED,CMP-014,160.00,110.00,110.01,2,Highest eligible bid won
+REQ-000972,SERVED,CMP-014,160.00,160.00,160.01,4,Highest eligible bid won
+REQ-000973,SERVED,CMP-014,160.00,70.00,80.01,2,Highest eligible bid won
+REQ-000974,SERVED,CMP-017,160.00,125.00,125.01,3,Highest eligible bid won
+REQ-000975,SERVED,CMP-017,160.00,95.00,95.01,2,Highest eligible bid won
+REQ-000976,SERVED,CMP-016,125.00,70.00,70.01,2,Highest eligible bid won
+REQ-000977,UNFILLED,,,,,0,No eligible campaigns
+REQ-000978,SERVED,CMP-014,160.00,160.00,160.01,4,Highest eligible bid won
+REQ-000979,SERVED,CMP-011,110.00,95.00,95.01,3,Highest eligible bid won
+REQ-000980,SERVED,CMP-006,125.00,,120.00,1,Highest eligible bid won
+REQ-000981,SERVED,CMP-017,160.00,110.00,110.01,3,Highest eligible bid won
+REQ-000982,UNFILLED,,,,,2,No bid meets the floor
+REQ-000983,SERVED,CMP-016,125.00,95.00,120.01,2,Highest eligible bid won
+REQ-000984,SERVED,CMP-010,140.00,,60.00,1,Highest eligible bid won
+REQ-000985,SERVED,CMP-016,125.00,95.00,95.01,2,Highest eligible bid won
+REQ-000986,SERVED,CMP-017,160.00,95.00,95.01,2,Highest eligible bid won
+REQ-000987,UNFILLED,,,,,1,No bid meets the floor
+REQ-000988,SERVED,CMP-019,95.00,,90.00,1,Highest eligible bid won
+REQ-000989,SERVED,CMP-014,160.00,110.00,110.01,2,Highest eligible bid won
+REQ-000990,UNFILLED,,,,,3,No bid meets the floor
+REQ-000991,SERVED,CMP-016,125.00,70.00,80.01,2,Highest eligible bid won
+REQ-000992,SERVED,CMP-014,160.00,110.00,120.01,3,Highest eligible bid won
+REQ-000993,SERVED,CMP-020,70.00,70.00,70.01,2,Highest eligible bid won
+REQ-000994,SERVED,CMP-014,160.00,110.00,110.01,3,Highest eligible bid won
+REQ-000995,SERVED,CMP-017,160.00,110.00,110.01,3,Highest eligible bid won
+REQ-000996,SERVED,CMP-017,160.00,95.00,95.01,2,Highest eligible bid won
+REQ-000997,SERVED,CMP-013,95.00,95.00,95.01,3,Highest eligible bid won
+REQ-000998,SERVED,CMP-014,160.00,110.00,110.01,2,Highest eligible bid won
+REQ-000999,SERVED,CMP-011,110.00,95.00,95.01,3,Highest eligible bid won
+REQ-001000,SERVED,CMP-019,95.00,55.00,60.01,2,Highest eligible bid won
+REQ-001001,SERVED,CMP-017,160.00,95.00,95.01,4,Highest eligible bid won
+REQ-001002,SERVED,CMP-017,160.00,160.00,160.01,2,Highest eligible bid won
+REQ-001003,SERVED,CMP-014,160.00,,60.00,1,Highest eligible bid won
+REQ-001004,SERVED,CMP-014,160.00,110.00,110.01,2,Highest eligible bid won
+REQ-001005,SERVED,CMP-016,125.00,85.00,85.01,3,Highest eligible bid won
+REQ-001006,SERVED,CMP-017,160.00,125.00,125.01,4,Highest eligible bid won
+REQ-001007,SERVED,CMP-014,160.00,140.00,140.01,3,Highest eligible bid won
+REQ-001008,SERVED,CMP-017,160.00,125.00,125.01,5,Highest eligible bid won
+REQ-001009,SERVED,CMP-013,95.00,70.00,70.01,2,Highest eligible bid won
+REQ-001010,SERVED,CMP-019,95.00,,60.00,1,Highest eligible bid won
+REQ-001011,SERVED,CMP-016,125.00,70.00,80.01,2,Highest eligible bid won
+REQ-001012,SERVED,CMP-019,95.00,,60.00,1,Highest eligible bid won
+REQ-001013,SERVED,CMP-014,160.00,110.00,110.01,2,Highest eligible bid won
+REQ-001014,SERVED,CMP-017,160.00,95.00,95.01,4,Highest eligible bid won
+REQ-001015,SERVED,CMP-017,160.00,95.00,95.01,2,Highest eligible bid won
+REQ-001016,SERVED,CMP-017,160.00,95.00,95.01,2,Highest eligible bid won
+REQ-001017,UNFILLED,,,,,3,No bid meets the floor
+REQ-001018,SERVED,CMP-017,160.00,125.00,125.01,3,Highest eligible bid won
+REQ-001019,UNFILLED,,,,,1,No bid meets the floor
+REQ-001020,SERVED,CMP-014,160.00,70.00,70.01,2,Highest eligible bid won
+REQ-001021,UNFILLED,,,,,2,No bid meets the floor
+REQ-001022,SERVED,CMP-011,110.00,95.00,95.01,3,Highest eligible bid won
+REQ-001023,SERVED,CMP-016,125.00,95.00,95.01,2,Highest eligible bid won
+REQ-001024,SERVED,CMP-011,110.00,95.00,95.01,3,Highest eligible bid won
+REQ-001025,SERVED,CMP-007,130.00,130.00,130.01,2,Highest eligible bid won
+REQ-001026,SERVED,CMP-017,160.00,95.00,95.01,2,Highest eligible bid won
+REQ-001027,SERVED,CMP-011,110.00,,80.00,1,Highest eligible bid won
+REQ-001028,SERVED,CMP-008,130.00,130.00,130.01,2,Highest eligible bid won
+REQ-001029,SERVED,CMP-017,160.00,110.00,110.01,3,Highest eligible bid won
+REQ-001030,SERVED,CMP-001,150.00,,150.00,1,Highest eligible bid won
+REQ-001031,SERVED,CMP-017,160.00,125.00,125.01,3,Highest eligible bid won
+REQ-001032,SERVED,CMP-014,160.00,140.00,140.01,3,Highest eligible bid won
+REQ-001033,SERVED,CMP-019,95.00,85.00,85.01,2,Highest eligible bid won
+REQ-001034,SERVED,CMP-014,160.00,160.00,160.01,3,Highest eligible bid won
+REQ-001035,SERVED,CMP-016,125.00,95.00,120.01,2,Highest eligible bid won
+REQ-001036,SERVED,CMP-003,200.00,,150.00,1,Highest eligible bid won
+REQ-001037,SERVED,CMP-017,160.00,125.00,125.01,5,Highest eligible bid won
+REQ-001038,SERVED,CMP-014,160.00,160.00,160.01,3,Highest eligible bid won
+REQ-001039,SERVED,CMP-016,125.00,85.00,85.01,3,Highest eligible bid won
+REQ-001040,SERVED,CMP-014,160.00,70.00,80.01,3,Highest eligible bid won
+REQ-001041,SERVED,CMP-014,160.00,,90.00,1,Highest eligible bid won
+REQ-001042,SERVED,CMP-014,160.00,95.00,95.01,2,Highest eligible bid won
+REQ-001043,SERVED,CMP-017,160.00,125.00,125.01,3,Highest eligible bid won
+REQ-001044,SERVED,CMP-004,180.00,90.00,120.01,2,Highest eligible bid won
+REQ-001045,UNFILLED,,,,,0,No eligible campaigns
+REQ-001046,SERVED,CMP-013,95.00,70.00,70.01,2,Highest eligible bid won
+REQ-001047,SERVED,CMP-001,150.00,,150.00,1,Highest eligible bid won
+REQ-001048,SERVED,CMP-017,160.00,110.00,110.01,3,Highest eligible bid won
+REQ-001049,SERVED,CMP-011,110.00,95.00,95.01,2,Highest eligible bid won
+REQ-001050,SERVED,CMP-016,125.00,70.00,80.01,2,Highest eligible bid won
+REQ-001051,SERVED,CMP-016,125.00,85.00,85.01,3,Highest eligible bid won
+REQ-001052,SERVED,CMP-011,110.00,95.00,95.01,3,Highest eligible bid won
+REQ-001053,SERVED,CMP-014,160.00,70.00,90.01,2,Highest eligible bid won
+REQ-001054,SERVED,CMP-020,70.00,,60.00,1,Highest eligible bid won
+REQ-001055,SERVED,CMP-019,95.00,85.00,85.01,2,Highest eligible bid won
+REQ-001056,SERVED,CMP-006,125.00,,120.00,1,Highest eligible bid won
+REQ-001057,SERVED,CMP-016,125.00,70.00,70.01,2,Highest eligible bid won
+REQ-001058,SERVED,CMP-014,160.00,160.00,160.01,3,Highest eligible bid won
+REQ-001059,SERVED,CMP-013,95.00,95.00,95.01,3,Highest eligible bid won
+REQ-001060,SERVED,CMP-014,160.00,110.00,110.01,3,Highest eligible bid won
+REQ-001061,SERVED,CMP-011,110.00,,80.00,1,Highest eligible bid won
+REQ-001062,SERVED,CMP-017,160.00,,60.00,1,Highest eligible bid won
+REQ-001063,SERVED,CMP-011,110.00,95.00,95.01,2,Highest eligible bid won
+REQ-001064,SERVED,CMP-016,125.00,95.00,95.01,2,Highest eligible bid won
+REQ-001065,SERVED,CMP-017,160.00,95.00,120.01,2,Highest eligible bid won
+REQ-001066,SERVED,CMP-016,125.00,85.00,90.01,3,Highest eligible bid won
+REQ-001067,SERVED,CMP-017,160.00,95.00,120.01,2,Highest eligible bid won
+REQ-001068,SERVED,CMP-017,160.00,110.00,110.01,3,Highest eligible bid won
+REQ-001069,UNFILLED,,,,,2,No bid meets the floor
+REQ-001070,SERVED,CMP-017,160.00,110.00,110.01,3,Highest eligible bid won
+REQ-001071,SERVED,CMP-014,160.00,110.00,120.01,2,Highest eligible bid won
+REQ-001072,SERVED,CMP-014,160.00,110.00,110.01,2,Highest eligible bid won
+REQ-001073,SERVED,CMP-014,160.00,140.00,140.01,2,Highest eligible bid won
+REQ-001074,UNFILLED,,,,,1,No bid meets the floor
+REQ-001075,UNFILLED,,,,,1,No bid meets the floor
+REQ-001076,SERVED,CMP-014,160.00,110.00,110.01,3,Highest eligible bid won
+REQ-001077,SERVED,CMP-013,95.00,70.00,90.01,2,Highest eligible bid won
+REQ-001078,SERVED,CMP-017,160.00,95.00,95.01,2,Highest eligible bid won
+REQ-001079,SERVED,CMP-003,200.00,,150.00,1,Highest eligible bid won
+REQ-001080,SERVED,CMP-017,160.00,95.00,120.01,2,Highest eligible bid won
+REQ-001081,UNFILLED,,,,,0,No eligible campaigns
+REQ-001082,SERVED,CMP-011,110.00,95.00,95.01,2,Highest eligible bid won
+REQ-001083,SERVED,CMP-019,95.00,70.00,90.01,2,Highest eligible bid won
+REQ-001084,SERVED,CMP-011,110.00,95.00,95.01,3,Highest eligible bid won
+REQ-001085,SERVED,CMP-017,160.00,125.00,125.01,3,Highest eligible bid won
+REQ-001086,SERVED,CMP-015,110.00,95.00,95.01,3,Highest eligible bid won
+REQ-001087,UNFILLED,,,,,0,No eligible campaigns
+REQ-001088,UNFILLED,,,,,0,No eligible campaigns
+REQ-001089,SERVED,CMP-013,95.00,,60.00,1,Highest eligible bid won
+REQ-001090,SERVED,CMP-016,125.00,70.00,90.01,2,Highest eligible bid won
+REQ-001091,SERVED,CMP-006,125.00,,120.00,1,Highest eligible bid won
+REQ-001092,SERVED,CMP-011,110.00,95.00,95.01,3,Highest eligible bid won
+REQ-001093,SERVED,CMP-014,160.00,160.00,160.01,3,Highest eligible bid won
+REQ-001094,SERVED,CMP-017,160.00,95.00,120.01,2,Highest eligible bid won
+REQ-001095,UNFILLED,,,,,0,No eligible campaigns
+REQ-001096,SERVED,CMP-017,160.00,95.00,95.01,2,Highest eligible bid won
+REQ-001097,UNFILLED,,,,,2,No bid meets the floor
+REQ-001098,SERVED,CMP-006,125.00,,120.00,1,Highest eligible bid won
+REQ-001099,SERVED,CMP-016,125.00,70.00,80.01,2,Highest eligible bid won
+REQ-001100,SERVED,CMP-014,160.00,125.00,125.01,3,Highest eligible bid won
+REQ-001101,SERVED,CMP-017,160.00,125.00,125.01,3,Highest eligible bid won
+REQ-001102,SERVED,CMP-006,125.00,,120.00,1,Highest eligible bid won
+REQ-001103,SERVED,CMP-019,95.00,70.00,70.01,2,Highest eligible bid won
+REQ-001104,SERVED,CMP-017,160.00,125.00,125.01,3,Highest eligible bid won
+REQ-001105,UNFILLED,,,,,1,No bid meets the floor
+REQ-001106,SERVED,CMP-017,160.00,95.00,120.01,2,Highest eligible bid won
+REQ-001107,SERVED,CMP-014,160.00,70.00,80.01,3,Highest eligible bid won
+REQ-001108,SERVED,CMP-014,160.00,110.00,120.01,3,Highest eligible bid won
+REQ-001109,SERVED,CMP-019,95.00,70.00,70.01,2,Highest eligible bid won
+REQ-001110,SERVED,CMP-014,160.00,110.00,110.01,2,Highest eligible bid won
+REQ-001111,SERVED,CMP-011,110.00,,60.00,1,Highest eligible bid won
+REQ-001112,SERVED,CMP-017,160.00,125.00,125.01,3,Highest eligible bid won
+REQ-001113,SERVED,CMP-010,140.00,110.00,110.01,2,Highest eligible bid won
+REQ-001114,SERVED,CMP-017,160.00,95.00,95.01,2,Highest eligible bid won
+REQ-001115,SERVED,CMP-013,95.00,70.00,70.01,2,Highest eligible bid won
+REQ-001116,UNFILLED,,,,,1,No bid meets the floor
+REQ-001117,UNFILLED,,,,,0,No eligible campaigns
+REQ-001118,SERVED,CMP-017,160.00,95.00,95.01,2,Highest eligible bid won
+REQ-001119,SERVED,CMP-002,170.00,,150.00,1,Highest eligible bid won
+REQ-001120,SERVED,CMP-014,160.00,70.00,120.01,3,Highest eligible bid won
+REQ-001121,SERVED,CMP-016,125.00,95.00,95.01,2,Highest eligible bid won
+REQ-001122,SERVED,CMP-019,95.00,,90.00,1,Highest eligible bid won
+REQ-001123,SERVED,CMP-016,125.00,70.00,90.01,2,Highest eligible bid won
+REQ-001124,SERVED,CMP-017,160.00,95.00,95.01,2,Highest eligible bid won
+REQ-001125,UNFILLED,,,,,2,No bid meets the floor
+REQ-001126,SERVED,CMP-017,160.00,95.00,120.01,4,Highest eligible bid won
+REQ-001127,SERVED,CMP-013,95.00,95.00,95.01,3,Highest eligible bid won
+REQ-001128,SERVED,CMP-014,160.00,110.00,110.01,2,Highest eligible bid won
+REQ-001129,SERVED,CMP-011,110.00,95.00,95.01,3,Highest eligible bid won
+REQ-001130,UNFILLED,,,,,2,No bid meets the floor
+REQ-001131,UNFILLED,,,,,3,No bid meets the floor
+REQ-001132,SERVED,CMP-019,95.00,,60.00,1,Highest eligible bid won
+REQ-001133,SERVED,CMP-017,160.00,95.00,120.01,2,Highest eligible bid won
+REQ-001134,SERVED,CMP-017,160.00,110.00,120.01,3,Highest eligible bid won
+REQ-001135,SERVED,CMP-017,160.00,125.00,125.01,4,Highest eligible bid won
+REQ-001136,SERVED,CMP-002,170.00,,150.00,1,Highest eligible bid won
+REQ-001137,SERVED,CMP-016,125.00,95.00,95.01,2,Highest eligible bid won
+REQ-001138,UNFILLED,,,,,1,No bid meets the floor
+REQ-001139,SERVED,CMP-011,110.00,95.00,95.01,3,Highest eligible bid won
+REQ-001140,SERVED,CMP-015,110.00,95.00,95.01,3,Highest eligible bid won
+REQ-001141,SERVED,CMP-014,160.00,125.00,125.01,3,Highest eligible bid won
+REQ-001142,SERVED,CMP-017,160.00,110.00,120.01,3,Highest eligible bid won
+REQ-001143,SERVED,CMP-014,160.00,70.00,70.01,2,Highest eligible bid won
+REQ-001144,UNFILLED,,,,,3,No bid meets the floor
+REQ-001145,SERVED,CMP-017,160.00,95.00,95.01,2,Highest eligible bid won
+REQ-001146,SERVED,CMP-017,160.00,95.00,95.01,4,Highest eligible bid won
+REQ-001147,SERVED,CMP-011,110.00,95.00,95.01,3,Highest eligible bid won
+REQ-001148,SERVED,CMP-011,110.00,95.00,95.01,3,Highest eligible bid won
+REQ-001149,SERVED,CMP-013,95.00,95.00,95.01,3,Highest eligible bid won
+REQ-001150,SERVED,CMP-014,160.00,125.00,125.01,3,Highest eligible bid won
+REQ-001151,SERVED,CMP-014,160.00,110.00,120.01,2,Highest eligible bid won
+REQ-001152,UNFILLED,,,,,2,No bid meets the floor
+REQ-001153,SERVED,CMP-013,95.00,,80.00,1,Highest eligible bid won
+REQ-001154,SERVED,CMP-014,160.00,110.00,110.01,2,Highest eligible bid won
+REQ-001155,SERVED,CMP-014,160.00,70.00,70.01,2,Highest eligible bid won
+REQ-001156,SERVED,CMP-006,125.00,,120.00,1,Highest eligible bid won
+REQ-001157,SERVED,CMP-014,160.00,70.00,80.01,2,Highest eligible bid won
+REQ-001158,SERVED,CMP-016,125.00,85.00,120.01,3,Highest eligible bid won
+REQ-001159,SERVED,CMP-013,95.00,70.00,90.01,2,Highest eligible bid won
+REQ-001160,SERVED,CMP-016,125.00,85.00,85.01,3,Highest eligible bid won
+REQ-001161,SERVED,CMP-014,160.00,110.00,110.01,2,Highest eligible bid won
+REQ-001162,SERVED,CMP-014,160.00,110.00,110.01,2,Highest eligible bid won
+REQ-001163,SERVED,CMP-017,160.00,125.00,125.01,3,Highest eligible bid won
+REQ-001164,UNFILLED,,,,,2,No bid meets the floor
+REQ-001165,SERVED,CMP-017,160.00,95.00,95.01,2,Highest eligible bid won
+REQ-001166,SERVED,CMP-017,160.00,95.00,95.01,2,Highest eligible bid won
+REQ-001167,SERVED,CMP-016,125.00,85.00,85.01,3,Highest eligible bid won
+REQ-001168,SERVED,CMP-016,125.00,70.00,70.01,2,Highest eligible bid won
+REQ-001169,SERVED,CMP-016,125.00,70.00,80.01,2,Highest eligible bid won
+REQ-001170,UNFILLED,,,,,2,No bid meets the floor
+REQ-001171,SERVED,CMP-019,95.00,,60.00,1,Highest eligible bid won
+REQ-001172,SERVED,CMP-017,160.00,95.00,95.01,2,Highest eligible bid won
+REQ-001173,SERVED,CMP-017,160.00,110.00,120.01,3,Highest eligible bid won
+REQ-001174,SERVED,CMP-016,125.00,70.00,70.01,2,Highest eligible bid won
+REQ-001175,UNFILLED,,,,,1,No bid meets the floor
+REQ-001176,SERVED,CMP-016,125.00,70.00,70.01,2,Highest eligible bid won
+REQ-001177,SERVED,CMP-019,95.00,85.00,85.01,2,Highest eligible bid won
+REQ-001178,SERVED,CMP-017,160.00,125.00,125.01,5,Highest eligible bid won
+REQ-001179,SERVED,CMP-019,95.00,95.00,95.01,3,Highest eligible bid won
+REQ-001180,SERVED,CMP-016,125.00,95.00,95.01,2,Highest eligible bid won
+REQ-001181,SERVED,CMP-013,95.00,95.00,95.01,3,Highest eligible bid won
+REQ-001182,UNFILLED,,,,,3,No bid meets the floor
+REQ-001183,SERVED,CMP-019,95.00,55.00,80.01,2,Highest eligible bid won
+REQ-001184,SERVED,CMP-013,95.00,,80.00,1,Highest eligible bid won
+REQ-001185,SERVED,CMP-016,125.00,70.00,120.01,2,Highest eligible bid won
+REQ-001186,SERVED,CMP-016,125.00,85.00,90.01,3,Highest eligible bid won
+REQ-001187,SERVED,CMP-014,160.00,70.00,70.01,3,Highest eligible bid won
+REQ-001188,SERVED,CMP-013,95.00,70.00,70.01,2,Highest eligible bid won
+REQ-001189,SERVED,CMP-013,95.00,70.00,70.01,2,Highest eligible bid won
+REQ-001190,SERVED,CMP-011,110.00,,90.00,1,Highest eligible bid won
+REQ-001191,SERVED,CMP-014,160.00,125.00,125.01,3,Highest eligible bid won
+REQ-001192,SERVED,CMP-019,95.00,85.00,90.01,2,Highest eligible bid won
+REQ-001193,SERVED,CMP-013,95.00,70.00,70.01,2,Highest eligible bid won
+REQ-001194,UNFILLED,,,,,1,No bid meets the floor
+REQ-001195,SERVED,CMP-013,95.00,70.00,90.01,2,Highest eligible bid won
+REQ-001196,SERVED,CMP-017,160.00,95.00,95.01,2,Highest eligible bid won
+REQ-001197,UNFILLED,,,,,0,No eligible campaigns
+REQ-001198,SERVED,CMP-014,160.00,70.00,90.01,2,Highest eligible bid won
+REQ-001199,SERVED,CMP-017,160.00,125.00,125.01,4,Highest eligible bid won
+REQ-001200,SERVED,CMP-014,160.00,140.00,140.01,2,Highest eligible bid won
+REQ-001201,SERVED,CMP-013,95.00,70.00,70.01,2,Highest eligible bid won
+REQ-001202,SERVED,CMP-001,150.00,,150.00,1,Highest eligible bid won
+REQ-001203,SERVED,CMP-019,95.00,70.00,70.01,2,Highest eligible bid won
+REQ-001204,SERVED,CMP-016,125.00,70.00,70.01,2,Highest eligible bid won
+REQ-001205,SERVED,CMP-017,160.00,110.00,110.01,2,Highest eligible bid won
+REQ-001206,SERVED,CMP-019,95.00,55.00,60.01,2,Highest eligible bid won
+REQ-001207,SERVED,CMP-006,125.00,,120.00,1,Highest eligible bid won
+REQ-001208,SERVED,CMP-017,160.00,125.00,125.01,3,Highest eligible bid won
+REQ-001209,SERVED,CMP-014,160.00,160.00,160.01,2,Highest eligible bid won
+REQ-001210,SERVED,CMP-014,160.00,125.00,125.01,3,Highest eligible bid won
+REQ-001211,UNFILLED,,,,,0,No eligible campaigns
+REQ-001212,SERVED,CMP-006,125.00,,120.00,1,Highest eligible bid won
+REQ-001213,SERVED,CMP-017,160.00,95.00,95.01,2,Highest eligible bid won
+REQ-001214,SERVED,CMP-019,95.00,95.00,95.01,3,Highest eligible bid won
+REQ-001215,SERVED,CMP-017,160.00,125.00,125.01,3,Highest eligible bid won
+REQ-001216,SERVED,CMP-013,95.00,,80.00,1,Highest eligible bid won
+REQ-001217,SERVED,CMP-017,160.00,125.00,125.01,5,Highest eligible bid won
+REQ-001218,SERVED,CMP-019,95.00,70.00,70.01,2,Highest eligible bid won
+REQ-001219,SERVED,CMP-002,170.00,,150.00,1,Highest eligible bid won
+REQ-001220,UNFILLED,,,,,2,No bid meets the floor
+REQ-001221,SERVED,CMP-013,95.00,70.00,70.01,2,Highest eligible bid won
+REQ-001222,SERVED,CMP-015,110.00,95.00,95.01,3,Highest eligible bid won
+REQ-001223,SERVED,CMP-016,125.00,70.00,70.01,2,Highest eligible bid won
+REQ-001224,SERVED,CMP-017,160.00,95.00,95.01,2,Highest eligible bid won
+REQ-001225,SERVED,CMP-016,125.00,70.00,80.01,2,Highest eligible bid won
+REQ-001226,SERVED,CMP-017,160.00,125.00,125.01,5,Highest eligible bid won
+REQ-001227,SERVED,CMP-011,110.00,,60.00,1,Highest eligible bid won
+REQ-001228,SERVED,CMP-016,125.00,95.00,95.01,2,Highest eligible bid won
+REQ-001229,SERVED,CMP-016,125.00,85.00,85.01,3,Highest eligible bid won
+REQ-001230,SERVED,CMP-019,95.00,70.00,70.01,2,Highest eligible bid won
+REQ-001231,SERVED,CMP-019,95.00,95.00,95.01,3,Highest eligible bid won
+REQ-001232,SERVED,CMP-015,110.00,95.00,95.01,3,Highest eligible bid won
+REQ-001233,UNFILLED,,,,,1,No bid meets the floor
+REQ-001234,SERVED,CMP-017,160.00,95.00,95.01,2,Highest eligible bid won
+REQ-001235,SERVED,CMP-013,95.00,,60.00,1,Highest eligible bid won
+REQ-001236,SERVED,CMP-019,95.00,95.00,95.01,3,Highest eligible bid won
+REQ-001237,UNFILLED,,,,,1,No bid meets the floor
+REQ-001238,SERVED,CMP-013,95.00,95.00,95.01,3,Highest eligible bid won
+REQ-001239,SERVED,CMP-019,95.00,,90.00,1,Highest eligible bid won
+REQ-001240,SERVED,CMP-011,110.00,95.00,95.01,2,Highest eligible bid won
+REQ-001241,UNFILLED,,,,,2,No bid meets the floor
+REQ-001242,SERVED,CMP-011,110.00,95.00,95.01,3,Highest eligible bid won
+REQ-001243,SERVED,CMP-017,160.00,110.00,110.01,3,Highest eligible bid won
+REQ-001244,SERVED,CMP-016,125.00,70.00,80.01,2,Highest eligible bid won
+REQ-001245,UNFILLED,,,,,0,No eligible campaigns
+REQ-001246,SERVED,CMP-014,160.00,95.00,95.01,2,Highest eligible bid won
+REQ-001247,SERVED,CMP-017,160.00,125.00,125.01,4,Highest eligible bid won
+REQ-001248,SERVED,CMP-001,150.00,,150.00,1,Highest eligible bid won
+REQ-001249,SERVED,CMP-017,160.00,95.00,95.01,2,Highest eligible bid won
+REQ-001250,SERVED,CMP-017,160.00,110.00,110.01,3,Highest eligible bid won
+REQ-001251,UNFILLED,,,,,3,No bid meets the floor
+REQ-001252,UNFILLED,,,,,0,No eligible campaigns
+REQ-001253,UNFILLED,,,,,1,No bid meets the floor
+REQ-001254,SERVED,CMP-011,110.00,95.00,95.01,3,Highest eligible bid won
+REQ-001255,SERVED,CMP-014,160.00,110.00,110.01,2,Highest eligible bid won
+REQ-001256,SERVED,CMP-013,95.00,95.00,95.01,3,Highest eligible bid won
+REQ-001257,SERVED,CMP-013,95.00,70.00,80.01,2,Highest eligible bid won
+REQ-001258,SERVED,CMP-013,95.00,70.00,90.01,2,Highest eligible bid won
+REQ-001259,SERVED,CMP-013,95.00,70.00,80.01,2,Highest eligible bid won
+REQ-001260,UNFILLED,,,,,0,No eligible campaigns
+REQ-001261,SERVED,CMP-017,160.00,110.00,110.01,3,Highest eligible bid won
+REQ-001262,SERVED,CMP-019,95.00,95.00,95.01,3,Highest eligible bid won
+REQ-001263,SERVED,CMP-013,95.00,,90.00,1,Highest eligible bid won
+REQ-001264,SERVED,CMP-014,160.00,55.00,90.01,2,Highest eligible bid won
+REQ-001265,SERVED,CMP-019,95.00,95.00,95.01,3,Highest eligible bid won
+REQ-001266,SERVED,CMP-017,160.00,110.00,110.01,3,Highest eligible bid won
+REQ-001267,SERVED,CMP-017,160.00,95.00,120.01,2,Highest eligible bid won
+REQ-001268,SERVED,CMP-013,95.00,70.00,90.01,2,Highest eligible bid won
+REQ-001269,UNFILLED,,,,,0,No eligible campaigns
+REQ-001270,SERVED,CMP-011,110.00,95.00,95.01,3,Highest eligible bid won
+REQ-001271,UNFILLED,,,,,3,No bid meets the floor
+REQ-001272,SERVED,CMP-016,125.00,70.00,80.01,2,Highest eligible bid won
+REQ-001273,SERVED,CMP-014,160.00,70.00,80.01,2,Highest eligible bid won
+REQ-001274,UNFILLED,,,,,1,No bid meets the floor
+REQ-001275,UNFILLED,,,,,3,No bid meets the floor
+REQ-001276,SERVED,CMP-014,160.00,125.00,125.01,3,Highest eligible bid won
+REQ-001277,UNFILLED,,,,,2,No bid meets the floor
+REQ-001278,SERVED,CMP-016,125.00,70.00,80.01,2,Highest eligible bid won
+REQ-001279,UNFILLED,,,,,2,No bid meets the floor
+REQ-001280,SERVED,CMP-015,110.00,95.00,95.01,3,Highest eligible bid won
+REQ-001281,SERVED,CMP-014,160.00,140.00,140.01,3,Highest eligible bid won
+REQ-001282,SERVED,CMP-014,160.00,110.00,110.01,3,Highest eligible bid won
+REQ-001283,SERVED,CMP-017,160.00,95.00,95.01,2,Highest eligible bid won
+REQ-001284,SERVED,CMP-017,160.00,95.00,95.01,4,Highest eligible bid won
+REQ-001285,UNFILLED,,,,,0,No eligible campaigns
+REQ-001286,SERVED,CMP-002,170.00,,150.00,1,Highest eligible bid won
+REQ-001287,UNFILLED,,,,,2,No bid meets the floor
+REQ-001288,SERVED,CMP-011,110.00,,60.00,1,Highest eligible bid won
+REQ-001289,SERVED,CMP-014,160.00,140.00,140.01,4,Highest eligible bid won
+REQ-001290,UNFILLED,,,,,1,No bid meets the floor
+REQ-001291,UNFILLED,,,,,2,No bid meets the floor
+REQ-001292,SERVED,CMP-017,160.00,95.00,95.01,4,Highest eligible bid won
+REQ-001293,SERVED,CMP-014,160.00,95.00,95.01,2,Highest eligible bid won
+REQ-001294,SERVED,CMP-018,85.00,70.00,70.01,2,Highest eligible bid won
+REQ-001295,SERVED,CMP-017,160.00,,90.00,1,Highest eligible bid won
+REQ-001296,UNFILLED,,,,,0,No eligible campaigns
+REQ-001297,SERVED,CMP-017,160.00,95.00,120.01,2,Highest eligible bid won
+REQ-001298,SERVED,CMP-016,125.00,85.00,85.01,3,Highest eligible bid won
+REQ-001299,SERVED,CMP-017,160.00,110.00,110.01,3,Highest eligible bid won
+REQ-001300,SERVED,CMP-019,95.00,70.00,70.01,2,Highest eligible bid won
+REQ-001301,SERVED,CMP-014,160.00,125.00,125.01,3,Highest eligible bid won
+REQ-001302,SERVED,CMP-011,110.00,,80.00,1,Highest eligible bid won
+REQ-001303,UNFILLED,,,,,2,No bid meets the floor
+REQ-001304,SERVED,CMP-013,95.00,70.00,90.01,2,Highest eligible bid won
+REQ-001305,UNFILLED,,,,,1,No bid meets the floor
+REQ-001306,SERVED,CMP-019,95.00,95.00,95.01,3,Highest eligible bid won
+REQ-001307,SERVED,CMP-016,125.00,85.00,85.01,3,Highest eligible bid won
+REQ-001308,SERVED,CMP-019,95.00,55.00,90.01,2,Highest eligible bid won
+REQ-001309,SERVED,CMP-019,95.00,95.00,95.01,3,Highest eligible bid won
+REQ-001310,SERVED,CMP-017,160.00,110.00,110.01,3,Highest eligible bid won
+REQ-001311,SERVED,CMP-017,160.00,110.00,110.01,3,Highest eligible bid won
+REQ-001312,SERVED,CMP-019,95.00,95.00,95.01,3,Highest eligible bid won
+REQ-001313,UNFILLED,,,,,0,No eligible campaigns
+REQ-001314,SERVED,CMP-011,110.00,95.00,95.01,2,Highest eligible bid won
+REQ-001315,UNFILLED,,,,,0,No eligible campaigns
+REQ-001316,SERVED,CMP-014,160.00,70.00,120.01,3,Highest eligible bid won
+REQ-001317,SERVED,CMP-014,160.00,,60.00,1,Highest eligible bid won
+REQ-001318,SERVED,CMP-011,110.00,95.00,95.01,2,Highest eligible bid won
+REQ-001319,SERVED,CMP-011,110.00,95.00,95.01,3,Highest eligible bid won
+REQ-001320,SERVED,CMP-017,160.00,110.00,120.01,2,Highest eligible bid won
+REQ-001321,SERVED,CMP-011,110.00,,90.00,1,Highest eligible bid won
+REQ-001322,SERVED,CMP-013,95.00,95.00,95.01,3,Highest eligible bid won
+REQ-001323,SERVED,CMP-002,170.00,,150.00,1,Highest eligible bid won
+REQ-001324,SERVED,CMP-019,95.00,95.00,95.01,3,Highest eligible bid won
+REQ-001325,SERVED,CMP-016,125.00,85.00,85.01,3,Highest eligible bid won
+REQ-001326,SERVED,CMP-014,160.00,,120.00,1,Highest eligible bid won
+REQ-001327,SERVED,CMP-010,140.00,125.00,125.01,3,Highest eligible bid won
+REQ-001328,SERVED,CMP-014,160.00,70.00,90.01,3,Highest eligible bid won
+REQ-001329,SERVED,CMP-019,95.00,85.00,85.01,2,Highest eligible bid won
+REQ-001330,SERVED,CMP-019,95.00,85.00,85.01,2,Highest eligible bid won
+REQ-001331,SERVED,CMP-016,125.00,70.00,90.01,2,Highest eligible bid won
+REQ-001332,SERVED,CMP-019,95.00,85.00,85.01,2,Highest eligible bid won
+REQ-001333,UNFILLED,,,,,1,No bid meets the floor
+REQ-001334,UNFILLED,,,,,1,No bid meets the floor
+REQ-001335,UNFILLED,,,,,0,No eligible campaigns
+REQ-001336,UNFILLED,,,,,2,No bid meets the floor
+REQ-001337,SERVED,CMP-011,110.00,95.00,95.01,3,Highest eligible bid won
+REQ-001338,UNFILLED,,,,,1,No bid meets the floor
+REQ-001339,SERVED,CMP-014,160.00,70.00,70.01,2,Highest eligible bid won
+REQ-001340,SERVED,CMP-014,160.00,110.00,110.01,2,Highest eligible bid won
+REQ-001341,SERVED,CMP-016,125.00,85.00,120.01,3,Highest eligible bid won
+REQ-001342,SERVED,CMP-017,160.00,125.00,125.01,4,Highest eligible bid won
+REQ-001343,SERVED,CMP-016,125.00,85.00,85.01,3,Highest eligible bid won
+REQ-001344,SERVED,CMP-017,160.00,,120.00,1,Highest eligible bid won
+REQ-001345,SERVED,CMP-019,95.00,70.00,70.01,2,Highest eligible bid won
+REQ-001346,SERVED,CMP-014,160.00,110.00,110.01,3,Highest eligible bid won
+REQ-001347,SERVED,CMP-016,125.00,70.00,120.01,2,Highest eligible bid won
+REQ-001348,SERVED,CMP-017,160.00,,80.00,1,Highest eligible bid won
+REQ-001349,SERVED,CMP-014,160.00,,60.00,1,Highest eligible bid won
+REQ-001350,SERVED,CMP-011,110.00,,90.00,1,Highest eligible bid won
+REQ-001351,SERVED,CMP-017,160.00,95.00,95.01,4,Highest eligible bid won
+REQ-001352,UNFILLED,,,,,1,No bid meets the floor
+REQ-001353,SERVED,CMP-013,95.00,70.00,90.01,2,Highest eligible bid won
+REQ-001354,SERVED,CMP-016,125.00,70.00,80.01,2,Highest eligible bid won
+REQ-001355,SERVED,CMP-014,160.00,95.00,95.01,2,Highest eligible bid won
+REQ-001356,SERVED,CMP-019,95.00,85.00,85.01,2,Highest eligible bid won
+REQ-001357,SERVED,CMP-017,160.00,95.00,95.01,4,Highest eligible bid won
+REQ-001358,SERVED,CMP-017,160.00,95.00,120.01,2,Highest eligible bid won
+REQ-001359,SERVED,CMP-011,110.00,,60.00,1,Highest eligible bid won
+REQ-001360,SERVED,CMP-016,125.00,95.00,95.01,2,Highest eligible bid won
+REQ-001361,UNFILLED,,,,,1,No bid meets the floor
+REQ-001362,SERVED,CMP-013,95.00,70.00,70.01,2,Highest eligible bid won
+REQ-001363,SERVED,CMP-016,125.00,70.00,120.01,2,Highest eligible bid won
+REQ-001364,SERVED,CMP-017,160.00,95.00,120.01,2,Highest eligible bid won
+REQ-001365,SERVED,CMP-017,160.00,95.00,120.01,4,Highest eligible bid won
+REQ-001366,SERVED,CMP-013,95.00,95.00,95.01,3,Highest eligible bid won
+REQ-001367,SERVED,CMP-002,170.00,,150.00,1,Highest eligible bid won
+REQ-001368,UNFILLED,,,,,3,No bid meets the floor
+REQ-001369,SERVED,CMP-013,95.00,95.00,95.01,3,Highest eligible bid won
+REQ-001370,SERVED,CMP-011,110.00,95.00,95.01,3,Highest eligible bid won
+REQ-001371,SERVED,CMP-014,160.00,70.00,120.01,2,Highest eligible bid won
+REQ-001372,UNFILLED,,,,,1,No bid meets the floor
+REQ-001373,SERVED,CMP-017,160.00,95.00,95.01,2,Highest eligible bid won
+REQ-001374,SERVED,CMP-006,125.00,,120.00,1,Highest eligible bid won
+REQ-001375,SERVED,CMP-016,125.00,95.00,95.01,2,Highest eligible bid won
+REQ-001376,SERVED,CMP-014,160.00,,120.00,1,Highest eligible bid won
+REQ-001377,SERVED,CMP-001,150.00,,150.00,1,Highest eligible bid won
+REQ-001378,SERVED,CMP-014,160.00,55.00,80.01,2,Highest eligible bid won
+REQ-001379,UNFILLED,,,,,2,No bid meets the floor
+REQ-001380,SERVED,CMP-019,95.00,,80.00,1,Highest eligible bid won
+REQ-001381,SERVED,CMP-017,160.00,125.00,125.01,4,Highest eligible bid won
+REQ-001382,SERVED,CMP-014,160.00,95.00,95.01,2,Highest eligible bid won
+REQ-001383,UNFILLED,,,,,1,No bid meets the floor
+REQ-001384,SERVED,CMP-016,125.00,95.00,95.01,2,Highest eligible bid won
+REQ-001385,SERVED,CMP-017,160.00,110.00,120.01,3,Highest eligible bid won
+REQ-001386,UNFILLED,,,,,0,No eligible campaigns
+REQ-001387,SERVED,CMP-013,95.00,70.00,80.01,2,Highest eligible bid won
+REQ-001388,SERVED,CMP-014,160.00,,60.00,1,Highest eligible bid won
+REQ-001389,SERVED,CMP-017,160.00,95.00,95.01,2,Highest eligible bid won
+REQ-001390,SERVED,CMP-013,95.00,70.00,70.01,2,Highest eligible bid won
+REQ-001391,SERVED,CMP-019,95.00,,60.00,1,Highest eligible bid won
+REQ-001392,UNFILLED,,,,,1,No bid meets the floor
+REQ-001393,SERVED,CMP-016,125.00,85.00,85.01,3,Highest eligible bid won
+REQ-001394,SERVED,CMP-014,160.00,125.00,125.01,3,Highest eligible bid won
+REQ-001395,SERVED,CMP-017,160.00,95.00,95.01,2,Highest eligible bid won
+REQ-001396,UNFILLED,,,,,3,No bid meets the floor
+REQ-001397,SERVED,CMP-014,160.00,95.00,95.01,2,Highest eligible bid won
+REQ-001398,SERVED,CMP-019,95.00,,60.00,1,Highest eligible bid won
+REQ-001399,SERVED,CMP-013,95.00,70.00,80.01,2,Highest eligible bid won
+REQ-001400,SERVED,CMP-016,125.00,70.00,70.01,2,Highest eligible bid won
+REQ-001401,SERVED,CMP-016,125.00,95.00,95.01,2,Highest eligible bid won
+REQ-001402,SERVED,CMP-020,70.00,,60.00,1,Highest eligible bid won
+REQ-001403,SERVED,CMP-013,95.00,70.00,80.01,2,Highest eligible bid won
+REQ-001404,SERVED,CMP-016,125.00,70.00,70.01,2,Highest eligible bid won
+REQ-001405,SERVED,CMP-014,160.00,110.00,110.01,2,Highest eligible bid won
+REQ-001406,SERVED,CMP-014,160.00,70.00,80.01,2,Highest eligible bid won
+REQ-001407,SERVED,CMP-014,160.00,70.00,90.01,2,Highest eligible bid won
+REQ-001408,SERVED,CMP-014,160.00,110.00,110.01,2,Highest eligible bid won
+REQ-001409,SERVED,CMP-019,95.00,70.00,70.01,2,Highest eligible bid won
+REQ-001410,SERVED,CMP-016,125.00,70.00,90.01,2,Highest eligible bid won
+REQ-001411,SERVED,CMP-017,160.00,95.00,95.01,2,Highest eligible bid won
+REQ-001412,UNFILLED,,,,,1,No bid meets the floor
+REQ-001413,SERVED,CMP-019,95.00,70.00,90.01,2,Highest eligible bid won
+REQ-001414,SERVED,CMP-013,95.00,95.00,95.01,3,Highest eligible bid won
+REQ-001415,SERVED,CMP-016,125.00,85.00,120.01,3,Highest eligible bid won
+REQ-001416,SERVED,CMP-014,160.00,110.00,110.01,2,Highest eligible bid won
+REQ-001417,SERVED,CMP-014,160.00,55.00,120.01,2,Highest eligible bid won
