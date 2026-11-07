@@ -1,6 +1,10 @@
 ﻿# Digital Ad Auction, Budget Pacing and Frequency-Cap Engine (PS-091)
 ### Team: T049 | Domain: Media - AdTech | Tech Stack: Python 3.10+
 
+### Team Members:
+- **Yashwanth S** ([@yashwanth06s](https://github.com/yashwanth06s)) — Decision Engine, Second-Price Auction & Budget Pacing
+- **Yashaswini** ([@yashaswini3135](https://github.com/yashaswini3135)) — Frequency Capping, IVT Detection & Test Suite
+
 ## 1. Project Overview
 This project implements a command-file driven **Ad-Serving Decision Engine** built for a digital publisher network. The engine:
 - Ingests advertiser wallets, campaign parameters, publisher floor prices, and hourly traffic distribution profiles.
@@ -108,3 +112,4 @@ All 40 tests validate every individual business rule, planted edge case, and dat
 3. **Credit Accounts**:
    - Can operate in negative balance down to `-credit_limit`.
    - Any transaction breaching the limit stands and suspends the account immediately.
+
