@@ -6,6 +6,10 @@
 - **Yashwanth S** ([@yashwanth06s](https://github.com/yashwanth06s)) — Decision Engine Core, Second-Price Auction, Budget Pacing & Billing Architecture
 - **Yashaswini** ([@yashaswini3135](https://github.com/yashaswini3135)) — Frequency Capping, Invalid Traffic (IVT) Detection, Publisher Settlements & Automated Test Suite
 
+### 5-Minute Demo Video Walkthrough:
+- **Demo Video Link**: [Watch 5-Minute Capstone Demo Video](PASTE_YOUR_DEMO_VIDEO_LINK_HERE) *(Public Google Drive / YouTube link)*
+- **Demo Video Script & Timing Guide**: [`docs/DEMO_VIDEO_SCRIPT.md`](docs/DEMO_VIDEO_SCRIPT.md)
+
 ---
 
 ## 1. Project Overview
