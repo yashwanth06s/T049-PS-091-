@@ -7,7 +7,7 @@
 - **Yashaswini** ([@yashaswini3135](https://github.com/yashaswini3135)) — Frequency Capping, Invalid Traffic (IVT) Detection, Publisher Settlements & Automated Test Suite
 
 ### 5-Minute Demo Video Walkthrough:
-- **Demo Video Link**: [Watch 5-Minute Capstone Demo Video](PASTE_YOUR_DEMO_VIDEO_LINK_HERE) *(Public Google Drive / YouTube link)*
+- **Demo Video Link**: [Watch 5-Minute Capstone Demo Video](https://drive.google.com/file/d/1ZCwVPkkgrb6bdHcBE2F3A2F3103d_n_u/view?usp=sharing) *(Public Google Drive )*
 - **Demo Video Script & Timing Guide**: [`docs/DEMO_VIDEO_SCRIPT.md`](docs/DEMO_VIDEO_SCRIPT.md)
 
 ---
