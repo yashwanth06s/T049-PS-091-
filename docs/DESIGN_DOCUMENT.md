@@ -1,9 +1,10 @@
 # CAPSTONE PROJECT DESIGN DOCUMENT
 ## PS-091: Digital Ad Auction, Budget Pacing and Frequency-Cap Engine
 **Team ID**: T049  
+**Domain**: Media - AdTech | **Tech Stack**: Python 3.12+  
 **Team Members**: Yashwanth S ([@yashwanth06s](https://github.com/yashwanth06s)) & Yashaswini ([@yashaswini3135](https://github.com/yashaswini3135))  
-**Domain**: Media - AdTech | **Language**: Python 3.10+ (Tested on Python 3.13)  
-**Submission Milestone**: Week 1 Design Document (Updated for Final Review)
+**Placement Coaching Capstone Project** — 10 SECONDS  
+**Submission Milestone**: Week 4 Final Submission (Updated Design Document)
 
 ---
 
@@ -11,26 +12,26 @@
 
 | Term | Definition & Domain Significance |
 |---|---|
-| **Publisher** | The digital property (website/app) supplying ad inventory slots (e.g. news portal, sports app). Sets a minimum floor price. |
-| **Advertiser** | The brand purchasing ad space to promote products. Holds either a prepaid wallet or a credit facility account. |
-| **Campaign** | An advertising initiative configured with flight dates, daily budget, targeting criteria, bid model, and frequency caps. |
+| **Publisher** | The digital property (website/app) supplying ad inventory slots (e.g., news portal, OTT, sports app). Establishes a minimum reserve floor price. |
+| **Advertiser** | The commercial entity purchasing ad space to promote products/services. Operates under either a prepaid wallet or credit facility. |
+| **Campaign** | An advertising flight configured with start/end dates, daily budget, multi-dimensional targeting criteria, bid model, and frequency caps. |
 | **CPM (Cost Per Mille)** | Cost per 1,000 ad impressions (views). CPM campaigns are billed immediately upon impression delivery. |
-| **CPC (Cost Per Click)** | Pricing model where advertisers are billed only when a verified user clicks on a served ad. |
-| **eCPM (Effective CPM)** | The normalized revenue per 1,000 impressions used to compare CPC and CPM bids on an equal footing: $eCPM = CPC \times CTR \times 1000$. |
-| **CTR (Click-Through Rate)** | The ratio of valid clicks to impressions: $CTR = \frac{\text{Clicks}}{\text{Impressions}}$. Trailing 7-day window used for CPC normalisation. |
-| **Floor Price** | The reserve CPM price set by a publisher. No ad request can clear below this price. |
-| **Second-Price Auction** | Auction mechanism where the highest eligible bidder wins, but clears at $\max(\text{2nd-highest eCPM}, \text{Floor}) + \text{Rs } 0.01$. Single bidders clear at the Floor. |
-| **Frequency Cap** | Rules restricting user ad fatigue: max 3 impressions per user per calendar day (IST) and max 1 per user per clock hour. |
-| **Budget Pacing** | Strategy spreading daily spend across 24 hourly buckets according to an empirical traffic distribution profile. |
-| **Parity Throttling** | Deterministic mechanism that forces an over-pace campaign to sit out of odd-sequence requests ($seq\_no \% 2 \ne 0$). |
-| **Catch-Up Spending** | Allows an under-spent campaign to consume up to 150% of the current hour's allocated bucket. |
-| **Invalid Traffic (IVT)** | Fraudulent or burst clicks: $> 5$ clicks from the same user on the same campaign within a rolling 10-minute window. |
-| **Revenue Share Clawback** | Reversal of publisher credits resulting from invalidated clicks, recovered from the publisher's subsequent payout. |
-| **Payout Rollover** | If a publisher's monthly payout is below Rs 5,000, disbursement is deferred and rolls over to the following month. |
+| **CPC (Cost Per Click)** | Performance pricing model where advertisers are billed only when a served impression receives a verified click event. |
+| **eCPM (Effective CPM)** | Normalized revenue per 1,000 impressions used to compare CPC and CPM bids on an equal footing: $\text{eCPM} = \text{CPC} \times \text{CTR} \times 1000$. |
+| **CTR (Click-Through Rate)** | The ratio of valid clicks to total impressions: $\text{CTR} = \frac{\text{Valid Clicks}}{\text{Impressions}}$. Trailing 7-day window is evaluated for CPC normalization. |
+| **Floor Price** | The reserve CPM price configured by a publisher. No ad request can clear below this price. |
+| **Second-Price Auction** | Auction mechanism where the highest eligible bidder wins, clearing at $\max(\text{2nd-highest eCPM}, \text{Floor}) + \text{Rs } 0.01$. Single eligible bidders clear at the Floor. |
+| **Frequency Cap** | Fatigue prevention rule restricting ad exposure: maximum 3 impressions per user per calendar day (IST) and maximum 1 per user per clock hour. |
+| **Budget Pacing** | Mechanism distributing daily campaign budget across 24 hourly buckets based on an empirical diurnal traffic distribution profile. |
+| **Parity Throttling** | Deterministic throttling mechanism where an over-paced campaign ($\ge 120\%$ of schedule) participates only on even request sequence numbers ($\text{seq\_no} \pmod 2 == 0$). |
+| **Catch-Up Spending** | Allows an under-spent campaign to consume up to 150% of the current hour's allocated bucket to recover lagging delivery. |
+| **Invalid Traffic (IVT)** | Fraudulent or burst clicks: $> 5$ clicks from the same user on the same campaign within a rolling 10-minute window (600 seconds). |
+| **Revenue Share Clawback** | Reversal of publisher revenue share credited on invalidated clicks, deducted from the publisher's monthly settlement payout. |
+| **Payout Rollover** | If a publisher's monthly payout is below the minimum threshold of Rs 5,000, disbursement is deferred and rolls over to the following month. |
 
 ---
 
-## 2. System Architecture & Class Diagram
+## 2. System Architecture & Class Model
 
 ```mermaid
 classDiagram
@@ -92,38 +93,39 @@ classDiagram
         +open_day(date_str)
         +process_until(ts_str)
         +close_day(date_str)
+        +export_csv_reports()
     }
 
     class BudgetService {
         +dict traffic_profile
         +dict daily_spend
         +dict hourly_spend
-        +get_pacing_status()
-        +can_bid()
-        +record_spend()
-        +refund_spend()
+        +get_pacing_status(campaign, hour)
+        +can_bid(campaign, hour, seq_no)
+        +record_spend(campaign_id, hour, amount)
+        +refund_spend(campaign_id, hour, amount)
     }
 
     class FrequencyService {
         +dict daily_counts
         +dict hourly_counts
-        +can_serve()
-        +record_impression()
+        +can_serve(campaign, user_id, date, hour)
+        +record_impression(campaign_id, user_id, date, hour)
     }
 
     class ClickService {
         +list clicks
         +dict user_campaign_clicks
-        +process_click()
+        +process_click(click, campaign, publisher, budget_svc, billing_svc)
     }
 
     class BillingService {
         +dict publisher_mtd_billed
         +dict publisher_clawbacks
-        +charge_impression()
-        +charge_click()
-        +reverse_click()
-        +get_publisher_payout()
+        +charge_impression(advertiser_id, publisher_id, clearing_cpm)
+        +charge_click(advertiser_id, publisher_id, cpc_bid)
+        +reverse_click(advertiser_id, publisher_id, amount)
+        +get_publisher_payout(publisher_id)
     }
 
     AdEngine --> Advertiser
@@ -137,14 +139,63 @@ classDiagram
 
 ---
 
-## 3. State Machine Diagrams
+## 3. End-to-End Processing & Event Sequence
 
-### 3.1 Ad Request Lifecycle & Auction Pipeline
+```mermaid
+sequenceDiagram
+    autonumber
+    participant EventQueue as Chronological Event Queue
+    participant Engine as AdEngine
+    participant Eligibility as Eligibility & Targeting
+    participant Pacing as BudgetService
+    participant Freq as FrequencyService
+    participant Auction as SecondPriceAuction
+    participant Billing as BillingService
+    participant ClickSvc as ClickService
+
+    alt Event is AdRequest
+        EventQueue->>Engine: Deliver AdRequest (REQ_ID, TS, Pub, User, Geo, Device, Cat)
+        Engine->>Eligibility: Filter eligible campaigns (Targeting, Flight, Balance)
+        Eligibility-->>Engine: Candidate campaigns
+        Engine->>Freq: Check user caps (Max 3/day, Max 1/hour)
+        Freq-->>Engine: Frequency-eligible candidates
+        Engine->>Pacing: Evaluate pacing status (Parity throttling if OVER_PACE)
+        Pacing-->>Engine: Auction candidate pool with eCPM bids
+        Engine->>Auction: Run Second-Price Auction (Candidates, Publisher Floor)
+        alt Auction Cleared (SERVED)
+            Auction-->>Engine: Winner ID, Clearing CPM
+            Engine->>Billing: Charge CPM impression (Clearing CPM / 1000)
+            Engine->>Freq: Record user impression
+            Engine->>Pacing: Record campaign spend
+        else Auction Unfilled (UNFILLED)
+            Auction-->>Engine: Reason (Floor not met / No eligible bidders)
+        end
+    else Event is Click
+        EventQueue->>Engine: Deliver Click (CLK_ID, REQ_ID, User, TS)
+        Engine->>ClickSvc: Process click on served campaign
+        alt Campaign is CPC and Daily Spend < Daily Budget
+            ClickSvc->>Billing: Charge CPC max_bid
+            ClickSvc->>Pacing: Record CPC spend
+        end
+        ClickSvc->>ClickSvc: Sliding window IVT check (> 5 clicks in 10 mins)
+        opt IVT Detected
+            ClickSvc->>Billing: Reverse click charges (Refund advertiser)
+            ClickSvc->>Billing: Register publisher clawback (60% or 70%)
+            ClickSvc->>Pacing: Refund campaign spend
+        end
+    end
+```
+
+---
+
+## 4. State Machine Diagrams
+
+### 4.1 Ad Request Lifecycle & Auction Pipeline
 ```mermaid
 stateDiagram-v2
-    [*] --> RequestReceived: AdRequest Arrives
+    [*] --> RequestReceived: AdRequest Ingested
     RequestReceived --> TargetingFilter: Match Geo, Device, Category
-    TargetingFilter --> FlightDateFilter: Check Flight Start & End
+    TargetingFilter --> FlightDateFilter: Verify Flight Start & End
     FlightDateFilter --> AccountCheck: Verify Wallet / Credit Non-Suspended
     AccountCheck --> FrequencyCapCheck: User Day <= 3 & Hour <= 1
     FrequencyCapCheck --> PacingFilter: Check 120% Spend & Seq Parity
@@ -154,24 +205,25 @@ stateDiagram-v2
     FloorCheck --> Unfilled: No Bid >= Floor
     FloorCheck --> SecondPriceCleared: Winner Clears at Max(2nd, Floor) + 0.01
     SecondPriceCleared --> BillingStage: CPM Debited Immediately
-    BillingStage --> ImpressionLogged: Frequency Recorded
+    BillingStage --> ImpressionLogged: Frequency & Spend Recorded
     ImpressionLogged --> [*]
     Unfilled --> [*]
+    ThrottledOut --> [*]
 ```
 
-### 3.2 Campaign Budget Pacing State Machine
+### 4.2 Campaign Budget Pacing State Machine
 ```mermaid
 stateDiagram-v2
     [*] --> ON_PACE: Spend between 100% and 120% of Schedule
     ON_PACE --> OVER_PACE: Spend >= 120% of Cumulative Schedule
-    OVER_PACE --> ON_PACE: New Hour Extends Schedule Budget
+    OVER_PACE --> ON_PACE: New Hour Extends Cumulative Schedule
     OVER_PACE --> Throttled: Odd Request Sequence (Sits Out)
     OVER_PACE --> Participates: Even Request Sequence
     ON_PACE --> UNDER_PACE: Spend < 100% of Cumulative Schedule
-    UNDER_PACE --> ON_PACE: Spend Catches Up (Max 150% of Hour Bucket)
+    UNDER_PACE --> ON_PACE: Spend Catches Up (Max 150% of Current Hour Bucket)
 ```
 
-### 3.3 Advertiser Account State Machine
+### 4.3 Advertiser Account State Machine
 ```mermaid
 stateDiagram-v2
     [*] --> ActivePrepaid: AccountType == PREPAID
@@ -185,81 +237,98 @@ stateDiagram-v2
 
 ---
 
-## 4. Complete Business Rules Register (BR-01 to BR-12)
+## 5. Comprehensive Business Rules Register (BR-01 to BR-12)
 
-### BR-01: Targeting & Flight Date Eligibility
-- **Condition**: Request matches `target_geos`, `target_devices`, `target_categories`. Request timestamp within `flight_start` 00:00:00 and `flight_end` 23:59:59.
-- **Budget & Wallet Condition**: `spend_today < daily_budget`. Prepaid wallet $\ge 	ext{max\_bid}/1000$ (CPM) or $\ge 	ext{max\_bid}$ (CPC). Credit account non-suspended.
+### BR-01: Eligibility & Targeting
+- **Condition**: An ad campaign is eligible to bid for an incoming request if and only if:
+  1. The request matches all targeting dimensions: `target_geos`, `target_devices`, and `target_categories` (supports lists and wildcards `ALL`, `*`, `ANY`).
+  2. Request timestamp is within `flight_start` 00:00:00 and `flight_end` 23:59:59 IST.
+  3. Campaign daily spend has not exhausted daily budget (`spend_today < daily_budget`).
+  4. Advertiser account is solvent:
+     - `PREPAID`: `wallet_balance >= max_bid / 1000` (CPM) or `wallet_balance >= max_bid` (CPC).
+     - `CREDIT`: Account is not `SUSPENDED`.
 
-### BR-02: User Frequency Capping
-- **Condition**: Per user ID per campaign in IST: Maximum **3 impressions/day** and **1 impression/hour**. Resets on day boundary (00:00:00) and clock hour boundaries.
+### BR-02: Frequency Capping
+- **Condition**: Maximum **3 impressions** per user per calendar day (IST) and maximum **1 impression** per user per clock hour (IST) for a given campaign.
+- **Resets**: Daily caps reset at 00:00:00 IST; hourly caps reset on clock hour transitions.
 
-### BR-03: Bid Normalisation & Trailing CTR
+### BR-03: Bid Normalisation (Effective CPM / eCPM)
 - **Formulas**:
-  - CPM: $	ext{eCPM} = 	ext{max\_bid}$
-  - CPC: $	ext{eCPM} = 	ext{max\_bid} 	imes 	ext{trailing\_ctr} 	imes 1,000$
-  - Trailing CTR: Computed over prior 7 calendar days ($D-7 \le 	ext{date} < D$). Default = 0.5% (0.005) if trailing impressions $< 1,000$. At $\ge 1,000$, switches to actual CTR.
+  - **CPM Campaigns**: $\text{eCPM} = \text{max\_bid}$
+  - **CPC Campaigns**: $\text{eCPM} = \text{max\_bid} \times \text{trailing\_ctr} \times 1,000$
+  - **Trailing CTR Calculation**:
+    - Evaluated across prior 7 calendar days ($D-7 \le \text{date} < D$).
+    - If total trailing impressions $< 1,000$, use default $\text{CTR} = 0.5\%$ ($0.005$).
+    - At $\ge 1,000$ trailing impressions, switch immediately to actual historical CTR:
+      $$\text{CTR} = \frac{\text{valid\_clicks}}{\text{impressions}}$$
 
 ### BR-04: Second-Price Auction & Floor Clearing
 - **Formulas**:
-  - No bids $\ge 	ext{Floor} \implies 	ext{UNFILLED}$.
-  - Single eligible bidder $\ge 	ext{Floor} \implies 	ext{Clearing CPM} = 	ext{Floor}$.
-  - $\ge 2$ bidders $\implies 	ext{Clearing CPM} = \max(	ext{second-highest eCPM}, 	ext{Floor}) + 	ext{Rs } 0.01$.
-  - Charge per impression: $rac{	ext{Clearing CPM}}{1000}$.
+  - If no eligible candidate meets or exceeds the publisher floor: Result is `UNFILLED`.
+  - Exactly **1 eligible candidate** $\ge \text{Floor}$: Clears at $\text{Clearing CPM} = \text{Floor}$.
+  - **$\ge 2$ eligible candidates** participate:
+    $$\text{Clearing CPM} = \max(\text{second-highest eCPM}, \text{Floor}) + \text{Rs } 0.01$$
+  - Price per impression: $\frac{\text{Clearing CPM}}{1000}$.
 
 ### BR-05: Auction Tie-Breaking
 - **Precedence**:
-  1. Lower cumulative spend today.
-  2. Lower campaign ID (ascending alphanumeric sort).
+  1. Campaign with lower cumulative spend today wins.
+  2. If still tied, campaign with alphabetically lower campaign ID wins (ascending sort).
 
-### BR-06: Budget Pacing & Catch-Up Mode
+### BR-06: Budget Pacing
 - **Formulas**:
-  - Cumulative scheduled budget up to current hour $H = 	ext{budget} 	imes \sum_{h=0}^H rac{	ext{pct}_h}{100}$.
-  - $	ext{OVER\_PACE}$ if $	ext{spend} \ge 1.20 	imes 	ext{scheduled}$.
-  - $	ext{UNDER\_PACE}$ if $	ext{spend} < 	ext{scheduled}$.
-  - In catch-up mode, max hourly spend allowed $= 1.50 	imes 	ext{hour\_bucket}$.
+  - Cumulative scheduled budget through hour $H$:
+    $$\text{Scheduled Budget} = \text{daily\_budget} \times \frac{\sum_{h=0}^H \text{pct}_h}{100}$$
+  - $\text{OVER\_PACE}$: $\text{spend\_today} \ge 1.20 \times \text{Scheduled Budget}$.
+  - $\text{UNDER\_PACE}$: $\text{spend\_today} < \text{Scheduled Budget}$.
+  - Catch-up limit: In $\text{UNDER\_PACE}$, allowable spend in current hour is capped at $150\%$ of the current hour's allocated bucket.
 
 ### BR-07: Pacing Parity Throttling
-- **Rule**: When `OVER_PACE`, campaign bids only on even request sequence numbers (`seq_no % 2 == 0`). Sits out on odd sequence numbers (`seq_no % 2 != 0`).
+- **Rule**: When $\text{OVER\_PACE}$, campaign bids only on even request sequence numbers:
+  $$\text{seq\_no} \pmod 2 == 0 \implies \text{Eligible to bid}$$
+  $$\text{seq\_no} \pmod 2 \ne 0 \implies \text{Sits out (Throttled)}$$
 
 ### BR-08: Billing Mechanics
 - **Rules**:
-  - CPM billed immediately on impression at clearing price.
-  - CPC billed on click at `max_bid`, only if `spend_today < daily_budget` when click arrives.
+  - CPM billed immediately on impression delivery at $\frac{\text{Clearing CPM}}{1000}$.
+  - CPC billed on click at `max_bid`, only if `spend_today < daily_budget` when the click arrives.
 
 ### BR-09: Wallet & Credit Limit Management
 - **Rules**:
-  - Prepaid debits wallet down to 0.00.
-  - Credit debits line down to `-credit_limit`. Any charge breaching limit stands and suspends the advertiser.
+  - Prepaid debits wallet balance down to 0.00.
+  - Credit debits line down to `-credit_limit`. Any charge breaching `-credit_limit` stands, and the advertiser is immediately marked `SUSPENDED`.
 
 ### BR-10: Invalid Traffic (IVT) Detection & Clawback
 - **Rules**:
-  - $> 5$ clicks from same user on same campaign within 10 minutes (600s) $\implies$ all clicks in window marked `INVALID`.
-  - Advertiser refunded CPC charge.
-  - Publisher revenue share clawed back from monthly payout.
+  - A rolling 10-minute sliding window (600s) monitors clicks per $(user\_id, campaign\_id)$.
+  - If $> 5$ clicks arrive within 10 minutes:
+    1. All burst clicks in the window are marked `INVALID`.
+    2. Advertiser billing for these clicks is reversed (refunded to wallet/credit balance).
+    3. The credited publisher revenue share is clawed back from the publisher's monthly payout.
 
 ### BR-11: Publisher Revenue Share & Payout Threshold
 - **Rules**:
-  - Total month-to-date billed $> 	ext{Rs } 1,00,000 \implies 70\%$ rev share.
-  - $\le 	ext{Rs } 1,00,000 \implies 60\%$ rev share.
-  - If payout due $< 	ext{Rs } 5,000$, rolls to next month (`payout_due = 0.00`).
+  - If month-to-date billed $> \text{Rs } 1,00,000$: Revenue share is **70%**.
+  - If month-to-date billed $\le \text{Rs } 1,00,000$: Revenue share is **60%**.
+  - Net Payout $= \text{Share Amount} + \text{Rollover In} - \text{Clawback}$.
+  - If Net Payout $< \text{Rs } 5,000$: Payout is deferred and rolled to next month (`payout_due = 0.00`).
 
 ### BR-12: Flight End & Budget Expiry
 - **Rules**:
-  - Flight serves until 23:59:59 on end date.
-  - Unspent daily budget lapses at 23:59:59 and never carries forward.
+  - Campaigns serve until 23:59:59 on `flight_end`.
+  - Unspent daily budget or campaign budget lapses and **never carries forward**.
 
 ---
 
-## 5. Planted Edge Cases Verification Table
+## 6. Planted Edge Cases Verification (EC-01 to EC-08)
 
-| ID | Edge Case | Observed System Output | Result |
+| Code | Planted Scenario | Engine Verification & Output Evidence | Status |
 |---|---|---|---|
-| **EC-01** | Single bidder equals floor | REQ-000466: CMP-001 bids 150.00 = floor 150.00 $ightarrow$ clears at 150.00 (Rs 0.15/imp) | Passed |
-| **EC-02** | 2nd bid below floor | REQ-000171: CMP-004 (180.00) vs CMP-005 (90.00) on PUB-4 (120.00) $ightarrow$ clears at 120.01 | Passed |
-| **EC-03** | 1,000 trailing impressions | CMP-006 switches from 0.5% to 0.7% CTR on 2026-10-12 $ightarrow$ eCPM 175.00 (REQ-000087) | Passed |
-| **EC-04** | Pacing at 120.0% boundary | CMP-001 throttled on odd REQ-000519 (`ThrottledUnfilled = 1`), wins REQ-000520 at hour 1 | Passed |
-| **EC-05** | Day/hour frequency boundary | REQ-000463 served (3rd today), REQ-000464 capped, REQ-000465 served at 00:00:00 next day | Passed |
-| **EC-06** | 6th click within 10:00 | CLK-00057..62 on CMP-006 marked INVALID; Rs 90.00 clawed back from PUB-4 | Passed |
-| **EC-07** | Publisher exactly Rs 1,00,000 | PUB-5 October total = Rs 100,000.00 $ightarrow$ evaluated at 60% revenue share tier | Passed |
-| **EC-08** | Credit breach by Rs 0.01 | ADV-07 balance hits -50,000.01 on REQ-001079 $ightarrow$ suspended; 12 later spiritual stay unfilled | Passed |
+| **EC-01** | Single bidder equals floor | `REQ-000466`: CMP-001 bids 150.00 = floor 150.00 $\to$ pays 150.00 CPM (Rs 0.15/imp) | **VERIFIED** |
+| **EC-02** | 2nd bid below floor | `REQ-000171`: CMP-004 (180.00) vs CMP-005 (90.00) on PUB-4 (120.00) $\to$ clears at 120.01 | **VERIFIED** |
+| **EC-03** | 1,000 trailing impressions | CMP-006 switches from 0.5% default to 0.7% actual CTR on 2026-10-12 $\to$ eCPM 175.00 (`REQ-000087`) | **VERIFIED** |
+| **EC-04** | 120.0% pacing boundary | CMP-001 throttled on odd `REQ-000519` (`ThrottledUnfilled = 1`), wins `REQ-000520` at hour 1 | **VERIFIED** |
+| **EC-05** | Day/hour frequency boundary | `REQ-000463` served (3rd today), `REQ-000464` capped, `REQ-000465` served at 00:00:00 next day | **VERIFIED** |
+| **EC-06** | 6th click within 10:00 | `CLK-00057..62` on CMP-006 marked INVALID; Rs 90.00 clawed back from PUB-4 | **VERIFIED** |
+| **EC-07** | Publisher at exactly Rs 1,00,000 | PUB-5 October total reaches exactly Rs 1,00,000.00 $\to$ evaluated at 60% revenue share tier | **VERIFIED** |
+| **EC-08** | Credit breach by Rs 0.01 | ADV-07 balance hits -50,000.01 on `REQ-001079` $\to$ charge stands, suspended; 12 subsequent requests stay unfilled | **VERIFIED** |

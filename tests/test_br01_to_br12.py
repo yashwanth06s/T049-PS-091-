@@ -274,3 +274,100 @@ def test_br11_publisher_tiers_and_rollover():
     payout_c = billing_small.get_publisher_payout("PUB-C")
     assert payout_c["payout_due"] == "0.00"
     assert Decimal(payout_c["rolled_to_next"]) > 0
+
+
+# --- BR-12: Flight End & Budget Expiry ---
+
+def test_br12_flight_end_and_budget_expiry():
+    camp = Campaign(
+        campaign_id="CMP-112", advertiser_id="ADV-01",
+        flight_start=date(2026, 10, 10), flight_end=date(2026, 10, 15),
+        daily_budget=2000.0, bid_type="CPM", max_bid=50.0,
+        target_geos=["ALL"], target_devices=["ALL"], target_categories=["ALL"],
+        freq_cap_day=3, freq_cap_hour=1
+    )
+    adv = Advertiser("ADV-01", "Adv1", "PREPAID", 5000.0, 0.0)
+
+    # Within flight: 23:59:59 on flight_end is valid
+    ok_last_second, _ = check_eligibility(
+        camp, adv, "KA", "MOBILE", "TECH", datetime(2026, 10, 15, 23, 59, 59), 0.0
+    )
+    assert ok_last_second is True
+
+    # After flight: 00:00:00 on the day after flight_end is invalid
+    ok_expired, reasons = check_eligibility(
+        camp, adv, "KA", "MOBILE", "TECH", datetime(2026, 10, 16, 0, 0, 0), 0.0
+    )
+    assert ok_expired is False
+    assert "Campaign flight has ended" in reasons
+
+    # Budget reset on new day (unspent budget lapses and does not roll forward)
+    bs = BudgetService({0: 100.0})
+    bs.record_spend("CMP-112", 0, Decimal("1200.00"))
+    assert bs.get_spend_today("CMP-112") == Decimal("1200.00")
+    bs.open_day()  # Next calendar day begins
+    assert bs.get_spend_today("CMP-112") == Decimal("0.00")
+
+
+# --- Additional Robustness Tests for Week 4 ---
+
+def test_auction_three_way_tie_break():
+    """Validates multi-candidate tie breaking by spend today, then alphanumeric campaign ID."""
+    c1 = Campaign("CMP-01", "ADV-1", date(2026, 10, 1), date(2026, 10, 31), 5000.0, "CPM", 100.0, ["ALL"], ["ALL"], ["ALL"], 3, 1)
+    c2 = Campaign("CMP-02", "ADV-2", date(2026, 10, 1), date(2026, 10, 31), 5000.0, "CPM", 100.0, ["ALL"], ["ALL"], ["ALL"], 3, 1)
+    c3 = Campaign("CMP-03", "ADV-3", date(2026, 10, 1), date(2026, 10, 31), 5000.0, "CPM", 100.0, ["ALL"], ["ALL"], ["ALL"], 3, 1)
+
+    # Tie 1: CMP-02 has lower spend than CMP-01 and CMP-03
+    candidates = [
+        {"campaign_id": "CMP-01", "campaign": c1, "ecpm": Decimal("100.00"), "spend_today": Decimal("50.00")},
+        {"campaign_id": "CMP-02", "campaign": c2, "ecpm": Decimal("100.00"), "spend_today": Decimal("20.00")},
+        {"campaign_id": "CMP-03", "campaign": c3, "ecpm": Decimal("100.00"), "spend_today": Decimal("80.00")},
+    ]
+    res = run_second_price_auction(candidates, floor_price=50.00)
+    assert res["winner_campaign_id"] == "CMP-02"
+
+    # Tie 2: CMP-01 and CMP-03 have identical spend -> tie broken by alphanumeric ID ascending (CMP-01 < CMP-03)
+    candidates_equal_spend = [
+        {"campaign_id": "CMP-03", "campaign": c3, "ecpm": Decimal("100.00"), "spend_today": Decimal("30.00")},
+        {"campaign_id": "CMP-01", "campaign": c1, "ecpm": Decimal("100.00"), "spend_today": Decimal("30.00")},
+    ]
+    res2 = run_second_price_auction(candidates_equal_spend, floor_price=50.00)
+    assert res2["winner_campaign_id"] == "CMP-01"
+
+
+def test_budget_under_pace_catchup_limit():
+    """Validates that UNDER_PACE campaigns cannot exceed 150% of the current hour bucket."""
+    profile = {0: 10.0, 1: 10.0}  # 10% per hour
+    bs = BudgetService(profile)
+    camp = Campaign("CMP-UNDER", "ADV-1", date(2026, 10, 1), date(2026, 10, 31), 1000.0, "CPM", 50.0, ["ALL"], ["ALL"], ["ALL"], 3, 1)
+
+    # Hour 1: Cumulative scheduled budget = 1000 * 20% = 200.0. Current hour bucket = 100.0.
+    # Allowable catch-up in hour 1 = 150.0.
+    # Total spend today = 50.0 (< 200.0 -> UNDER_PACE).
+    bs.record_spend("CMP-UNDER", 1, Decimal("140.00"))
+    can_bid, status, _ = bs.can_bid(camp, 1, 100)
+    assert can_bid is True
+    assert status == "UNDER_PACE"
+
+    # Spend reaches 150.0 in hour 1
+    bs.record_spend("CMP-UNDER", 1, Decimal("10.00"))  # now 150.0
+    can_bid, status, reason = bs.can_bid(camp, 1, 100)
+    assert can_bid is False
+    assert "Catch-up hourly spend cap (150%) reached" in reason
+
+
+def test_publisher_payout_with_rollover_in_and_clawback():
+    """Validates net payout calculation when rollover-in exceeds clawback and meets 5,000 threshold."""
+    adv = Advertiser("ADV-01", "Adv1", "PREPAID", 5000.0, 0.0)
+    pub = Publisher("PUB-ROLL", "RolloverPub", 50.0, 4000.0, 4500.0)
+    billing = BillingService({"ADV-01": adv}, {"PUB-ROLL": pub})
+
+    # Total billed = 4,000 -> 60% share = 2,400.
+    # Rollover in = 4,500. Total gross payout = 2,400 + 4,500 = 6,900.
+    # Claw back 200 -> net payout = 6,700 (>= 5,000 threshold).
+    billing.reverse_click("ADV-01", "PUB-ROLL", Decimal("333.333333"))  # clawback ~ 200.00
+    payout = billing.get_publisher_payout("PUB-ROLL")
+    assert Decimal(payout["payout_due"]) >= Decimal("5000.00")
+    assert payout["rolled_to_next"] == "0.00"
+
+

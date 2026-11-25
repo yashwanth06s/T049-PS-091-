@@ -1,9 +1,10 @@
 ﻿# Architecture & Design Decision Log
 ## Project: Digital Ad Auction Engine (PS-091) — Team T049
+### Placement Coaching Capstone Project — 10 SECONDS (Week 4 Final Submission)
 
-| Decision ID | Area | Context & Alternatives Considered | Decision Taken | Rationale |
+| Decision ID | Architecture Area | Context & Alternatives Considered | Decision Taken | Rationale & Trade-offs |
 |---|---|---|---|---|
-| **DEC-01** | Language Choice | Java 17+ vs. Python 3.10+ | Chosen **Python 3.13** | Rapid iteration, concise standard libraries for time-window calculations (`datetime`, `collections`), and quick live code modifications during viva. |
+| **DEC-01** | Language Choice | Java 17+ vs. Python 3.10+ | Chosen **Python 3.12+** | Rapid iteration, concise standard libraries for time-window calculations (`datetime`, `collections`), zero runtime dependencies, and frictionless live code modifications during viva. |
 | **DEC-02** | Arithmetic Precision | Standard `float` vs. `decimal.Decimal` | Chosen **`decimal.Decimal`** | Prevents binary floating-point roundoff issues in financial calculations (paise rounding, credit limit checks, second-price increments of 0.01). |
 | **DEC-03** | Event Merging | Sequential file passes vs. Merged chronological priority queue | Chosen **Timestamp-ordered priority queue** | Merges `ad_requests.csv` and `clicks.csv` in strict time sequence, with clicks taking precedence on identical seconds. |
 | **DEC-04** | Frequency Tracking | Database/Redis vs. In-memory Composite Dictionaries | Chosen **In-memory dictionary with `(campaign, user, date/hour)` keys** | Fast $O(1)$ lookups; avoids external service dependencies; calendar day and clock hour transitions reset naturally via key formulation. |
@@ -13,3 +14,9 @@
 | **DEC-08** | IVT Detection | Fixed batch buckets vs. Sliding window queue | Chosen **Sliding time window per `(user_id, campaign_id)`** | Catches rolling 10-minute bursts across arbitrary time boundaries ($> 5$ clicks in 600 seconds). |
 | **DEC-09** | IVT Reversal Accounting | Mutating historical ledger vs. Dedicated refund and clawback tracking | Chosen **Dedicated refund to wallet and publisher clawback counter** | Accurately preserves gross MTD billing while cleanly adjusting net payouts and maintaining audit trails. |
 | **DEC-10** | Credit Suspension | Rejecting breaching bid vs. Permitting winning charge and suspending account | Chosen **Permit the winning charge and suspend account** | Satisfies EC-08 requirement where a charge pushing balance to -50,000.01 stands and suspends the advertiser. |
+| **DEC-11** | Trailing CTR Evaluation Window | Dynamic real-time CTR vs. Lookback 7-day calendar window | Chosen **Historical prior 7 calendar days ($D-7 \le \text{date} < D$)** | Conforms to BR-03 and EC-03 specification; preserves stability of eCPM calculations during intra-day bidding. |
+| **DEC-12** | Cold-Start CTR Default | Zero CTR vs. Fixed benchmark 0.5% | Chosen **Default 0.5% (0.005) for $< 1,000$ trailing impressions** | Enables new or low-volume CPC campaigns to compete in auctions before achieving statistical significance; switches dynamically at 1,000 impressions. |
+| **DEC-13** | Publisher Tier Boundary | Inclusive boundary ($\ge 100,000$) vs. Strict inequality ($> 100,000$) | Chosen **Strict inequality ($> 100,000$ for 70%)** | Validated by EC-07 where PUB-5 at exactly Rs 1,00,000.00 remains at the 60% revenue share tier. |
+| **DEC-14** | Payout Rollover Semantics | Discarding sub-threshold balances vs. Carrying forward to next month | Chosen **Carry forward if net payout $< \text{Rs } 5,000$** | Complies with BR-11; preserves publisher earnings while avoiding micro-payout bank transaction overhead. |
+| **DEC-15** | Dual-Directory Output Strategy | Single output path vs. Mirroring in root and `output/` | Chosen **Mirroring output CSVs to both root and `output/`** | Guarantees test harnesses and human evaluators find artifacts regardless of working directory. |
+| **DEC-16** | Modular Test Architecture | Monolithic test script vs. Layered test modules | Chosen **Separation into `test_br01_to_br12.py`, `test_edge_cases.py`, `test_frequency.py`, and `test_models_and_services.py`** | Enables targeted rule verification, 100% assertion coverage across all 8 edge cases, and instant live code verification during viva. |

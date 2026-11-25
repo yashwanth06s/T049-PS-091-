@@ -1,40 +1,133 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="utf-8">
-<title>PS-091 Capstone Design Document</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PS-091 Capstone Design Document - Team T049</title>
 <style>
+@page {
+    size: A4;
+    margin: 15mm 15mm 15mm 15mm;
+}
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    line-height: 1.6;
+    line-height: 1.5;
     color: #1a1a1a;
-    max-width: 900px;
-    margin: 40px auto;
+    max-width: 1000px;
+    margin: 20px auto;
     padding: 0 20px;
+    background-color: #ffffff;
 }
-h1, h2, h3 { color: #0d47a1; margin-top: 1.5em; }
-h1 { border-bottom: 2px solid #0d47a1; padding-bottom: 8px; }
-table { border-collapse: collapse; width: 100%; margin: 20px 0; }
-th, td { border: 1px solid #ccc; padding: 10px 12px; text-align: left; font-size: 14px; }
-th { background-color: #f0f4f8; color: #0d47a1; font-weight: 600; }
-tr:nth-child(even) { background-color: #fafafa; }
-code { background: #f4f4f4; padding: 2px 6px; border-radius: 4px; font-family: Consolas, monospace; }
-pre { background: #f4f4f4; padding: 12px; border-radius: 6px; overflow-x: auto; }
-.badge { background: #e3f2fd; color: #0d47a1; padding: 4px 8px; border-radius: 4px; font-weight: bold; }
+.header-box {
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 3px solid #0d47a1;
+    padding-bottom: 15px;
+}
+h1 {
+    color: #0d47a1;
+    font-size: 26px;
+    margin: 0 0 8px 0;
+    letter-spacing: 0.5px;
+}
+h2 {
+    color: #0d47a1;
+    font-size: 20px;
+    margin-top: 28px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 6px;
+}
+h3 {
+    color: #1565c0;
+    font-size: 16px;
+    margin: 6px 0;
+}
+p.meta {
+    font-size: 14px;
+    color: #424242;
+    margin: 4px 0;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 16px 0 24px 0;
+    font-size: 13px;
+}
+th, td {
+    border: 1px solid #d0d7de;
+    padding: 8px 10px;
+    text-align: left;
+    vertical-align: top;
+}
+th {
+    background-color: #f0f4f8;
+    color: #0d47a1;
+    font-weight: 600;
+}
+tr:nth-child(even) {
+    background-color: #fafbfc;
+}
+code {
+    background: #f6f8fa;
+    padding: 2px 5px;
+    border-radius: 4px;
+    font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+    font-size: 12px;
+    color: #0969da;
+}
+.badge {
+    display: inline-block;
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 11px;
+    border: 1px solid #a5d6a7;
+}
+.diagram-box {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    padding: 14px;
+    margin: 14px 0;
+    font-family: monospace;
+    font-size: 12px;
+    white-space: pre-wrap;
+    overflow-x: auto;
+}
+@media print {
+    body {
+        margin: 0;
+        padding: 0;
+        max-width: 100%;
+        font-size: 12px;
+    }
+    th, td {
+        padding: 6px 8px;
+        font-size: 11px;
+    }
+    h1 { font-size: 22px; }
+    h2 { font-size: 16px; page-break-after: avoid; }
+    table { page-break-inside: auto; }
+    tr { page-break-inside: avoid; page-break-after: auto; }
+}
 </style>
 </head>
 <body>
-<div style="text-align: center; margin-bottom: 40px;">
+
+<div class="header-box">
     <h1>CAPSTONE PROJECT DESIGN DOCUMENT</h1>
     <h3>PS-091: Digital Ad Auction, Budget Pacing and Frequency-Cap Engine</h3>
-    <p><strong>Team ID</strong>: T049 | <strong>Domain</strong>: Media - AdTech</p>
-    <p><strong>Team Members</strong>: Yashwanth S (yashwanth06s) & Yashaswini (yashaswini3135)</p>
-    <p><em>Placement Coaching Capstone Project — 10 SECONDS</em></p>
+    <p class="meta"><strong>Team ID</strong>: T049 | <strong>Domain</strong>: Media - AdTech | <strong>Tech Stack</strong>: Python 3.12+</p>
+    <p class="meta"><strong>Team Members</strong>: Yashwanth S (yashwanth06s) &amp; Yashaswini (yashaswini3135)</p>
+    <p class="meta"><em>Placement Coaching Capstone Project — 10 SECONDS (Week 4 Final Submission)</em></p>
 </div>
 
 <h2>1. Domain Glossary</h2>
 <table>
-<tr><th>Term</th><th>Definition & Domain Significance</th></tr>
+<tr><th style="width: 22%;">Term</th><th>Definition &amp; Domain Significance</th></tr>
 <tr><td><b>Publisher</b></td><td>The digital property supplying ad slots. Sets a floor CPM reserve price.</td></tr>
 <tr><td><b>Advertiser</b></td><td>Brand purchasing ad space. Holds either a PREPAID wallet or CREDIT account.</td></tr>
 <tr><td><b>Campaign</b></td><td>An ad initiative with targeting, flight dates, bid model, and daily budget.</td></tr>
@@ -43,34 +136,36 @@ pre { background: #f4f4f4; padding: 12px; border-radius: 6px; overflow-x: auto; 
 <tr><td><b>eCPM</b></td><td>Effective CPM: Standardised revenue per 1,000 impressions: <code>eCPM = CPC * CTR * 1000</code>.</td></tr>
 <tr><td><b>Floor Price</b></td><td>Reserve CPM set by publisher. Requests clear at or above this price.</td></tr>
 <tr><td><b>Second-Price Auction</b></td><td>Highest eligible bidder wins; clears at <code>max(2nd_eCPM, Floor) + Rs 0.01</code>. Single bidder pays Floor.</td></tr>
-<tr><td><b>Frequency Cap</b></td><td>Max 3 impressions per user per calendar day and max 1 per clock hour.</td></tr>
+<tr><td><b>Frequency Cap</b></td><td>Max 3 impressions per user per calendar day (IST) and max 1 per clock hour (IST).</td></tr>
 <tr><td><b>Budget Pacing</b></td><td>Spreads daily budget across 24 hourly buckets matching the traffic profile.</td></tr>
 <tr><td><b>Parity Throttling</b></td><td>When OVER_PACE (&ge;120%), campaign sits out on odd request sequence numbers.</td></tr>
+<tr><td><b>Catch-Up Mode</b></td><td>When UNDER_PACE, campaign can spend up to 150% of the current hour's allocated bucket.</td></tr>
 <tr><td><b>Invalid Traffic (IVT)</b></td><td>&gt;5 clicks from same user on same campaign within 10 minutes marks all burst clicks INVALID.</td></tr>
 <tr><td><b>Clawback</b></td><td>Publisher share credited on invalid clicks is clawed back from monthly payout.</td></tr>
 <tr><td><b>Payout Rollover</b></td><td>Monthly payouts under Rs 5,000 roll forward to the subsequent month.</td></tr>
+<tr><td><b>Flight End &amp; Expiry</b></td><td>Campaigns serve until 23:59:59 on flight_end. Unspent daily budget lapses at midnight.</td></tr>
 </table>
 
 <h2>2. Business Rules Register (BR-01 to BR-12)</h2>
 <table>
-<tr><th>Rule ID</th><th>Rule Name</th><th>Operational Logic & Formulas</th></tr>
-<tr><td><b>BR-01</b></td><td>Eligibility & Targeting</td><td>Matches geo, device, category. Request time within flight dates. Daily spend &lt; daily budget. Prepaid wallet &ge; 1 max bid; Credit non-suspended.</td></tr>
+<tr><th style="width: 10%;">Rule ID</th><th style="width: 24%;">Rule Name</th><th>Operational Logic &amp; Formulas</th></tr>
+<tr><td><b>BR-01</b></td><td>Eligibility &amp; Targeting</td><td>Matches geo, device, category. Request time within flight dates. Daily spend &lt; daily budget. Prepaid wallet &ge; 1 max bid; Credit non-suspended.</td></tr>
 <tr><td><b>BR-02</b></td><td>Frequency Capping</td><td>Max 3 impressions/user/day (calendar day IST) and max 1 impression/user/hour (clock hour IST).</td></tr>
-<tr><td><b>BR-03</b></td><td>Bid Normalisation</td><td>CPM: eCPM = max_bid. CPC: eCPM = max_bid * trailing_CTR * 1000. Trailing CTR default = 0.5% if &lt;1000 impressions; else valid_clicks / impressions.</td></tr>
-<tr><td><b>BR-04</b></td><td>Second-Price Auction</td><td>Winner clears at <code>max(second_eCPM, floor) + 0.01</code>. Single bidder pays floor. Unfilled if all bids &lt; floor.</td></tr>
+<tr><td><b>BR-03</b></td><td>Bid Normalisation</td><td>CPM: <code>eCPM = max_bid</code>. CPC: <code>eCPM = max_bid * trailing_CTR * 1000</code>. Trailing CTR default = 0.5% if &lt;1000 impressions; else <code>valid_clicks / impressions</code>.</td></tr>
+<tr><td><b>BR-04</b></td><td>Second-Price Auction</td><td>Winner clears at <code>max(second_eCPM, floor) + 0.01</code>. Single bidder pays floor. Unfilled if all bids &lt; floor. Price/imp = <code>Clearing_CPM / 1000</code>.</td></tr>
 <tr><td><b>BR-05</b></td><td>Auction Tie-Break</td><td>Equal eCPM bids won by campaign with lower cumulative spend today, then campaign_id ascending.</td></tr>
-<tr><td><b>BR-06</b></td><td>Budget Pacing</td><td>Hourly budget buckets. OVER_PACE if spend &ge; 120% of schedule. In UNDER_PACE, catch-up allows up to 150% of current hour bucket.</td></tr>
+<tr><td><b>BR-06</b></td><td>Budget Pacing</td><td>Hourly budget buckets per traffic profile. OVER_PACE if spend &ge; 120% of schedule. In UNDER_PACE, catch-up allows up to 150% of current hour bucket.</td></tr>
 <tr><td><b>BR-07</b></td><td>Pacing Throttling</td><td>When OVER_PACE, campaign bids only on even request sequence numbers (<code>seq_no % 2 == 0</code>).</td></tr>
 <tr><td><b>BR-08</b></td><td>Billing Mechanics</td><td>CPM billed per impression at clearing CPM / 1000. CPC billed on click at max_bid capped at daily budget + 1 bid.</td></tr>
-<tr><td><b>BR-09</b></td><td>Wallet & Credit Limits</td><td>Prepaid debits wallet to 0. Credit balance may go down to -credit_limit. Any breaching charge stands and suspends account.</td></tr>
-<tr><td><b>BR-10</b></td><td>IVT Detection & Clawback</td><td>&gt;5 clicks in 10-minute rolling window marks all INVALID. Advertiser refunded; publisher share clawed back.</td></tr>
+<tr><td><b>BR-09</b></td><td>Wallet &amp; Credit Limits</td><td>Prepaid debits wallet to 0. Credit balance may go down to -credit_limit. Any breaching charge stands and suspends account.</td></tr>
+<tr><td><b>BR-10</b></td><td>IVT Detection &amp; Clawback</td><td>&gt;5 clicks in 10-minute rolling window marks all burst clicks INVALID. Advertiser refunded; publisher share clawed back.</td></tr>
 <tr><td><b>BR-11</b></td><td>Publisher Revenue Share</td><td>70% share if monthly billed &gt; Rs 1,00,000; else 60%. Payouts &lt; Rs 5,000 roll to next month.</td></tr>
-<tr><td><b>BR-12</b></td><td>Flight End & Expiry</td><td>Campaigns serve until 23:59:59 on flight_end. Unspent budget lapses and never carries forward.</td></tr>
+<tr><td><b>BR-12</b></td><td>Flight End &amp; Expiry</td><td>Campaigns serve until 23:59:59 on flight_end. Unspent daily budget lapses at 23:59:59 and never carries forward.</td></tr>
 </table>
 
 <h2>3. Planted Edge Cases Verification (EC-01 to EC-08)</h2>
 <table>
-<tr><th>Code</th><th>Planted Scenario</th><th>Engine Verification</th><th>Status</th></tr>
+<tr><th style="width: 10%;">Code</th><th style="width: 25%;">Planted Scenario</th><th>Engine Verification &amp; Evidence</th><th style="width: 12%;">Status</th></tr>
 <tr><td><b>EC-01</b></td><td>Single bidder equals floor</td><td>REQ-000466: CMP-001 bids 150.00 = floor 150.00 &rarr; pays 150.00 (Rs 0.15/imp)</td><td><span class="badge">VERIFIED</span></td></tr>
 <tr><td><b>EC-02</b></td><td>2nd bid below floor</td><td>REQ-000171: CMP-004 (180.00) vs CMP-005 (90.00) on PUB-4 (120.00) &rarr; clears at 120.01</td><td><span class="badge">VERIFIED</span></td></tr>
 <tr><td><b>EC-03</b></td><td>1000 trailing impressions</td><td>CMP-006 switches from 0.5% to 0.7% CTR &rarr; eCPM 175.00 (REQ-000087)</td><td><span class="badge">VERIFIED</span></td></tr>
@@ -78,8 +173,37 @@ pre { background: #f4f4f4; padding: 12px; border-radius: 6px; overflow-x: auto; 
 <tr><td><b>EC-05</b></td><td>Day/hour frequency boundary</td><td>REQ-000463 served (3rd today), REQ-000464 capped, REQ-000465 served at 00:00:00</td><td><span class="badge">VERIFIED</span></td></tr>
 <tr><td><b>EC-06</b></td><td>6th click within 10:00</td><td>CLK-00057..62 marked INVALID; Rs 90.00 clawed back from PUB-4</td><td><span class="badge">VERIFIED</span></td></tr>
 <tr><td><b>EC-07</b></td><td>Publisher at exactly Rs 1,00,000</td><td>PUB-5 reaches Rs 1,00,000.00 &rarr; stays at 60% revenue share tier</td><td><span class="badge">VERIFIED</span></td></tr>
-<tr><td><b>EC-08</b></td><td>Credit breach by Rs 0.01</td><td>ADV-07 balance hits -50,000.01 &rarr; charge stands, suspended; 12 spiritual stay unfilled</td><td><span class="badge">VERIFIED</span></td></tr>
+<tr><td><b>EC-08</b></td><td>Credit breach by Rs 0.01</td><td>ADV-07 balance hits -50,000.01 &rarr; charge stands, suspended; 12 subsequent requests stay unfilled</td><td><span class="badge">VERIFIED</span></td></tr>
 </table>
+
+<h2>4. System Architecture &amp; Event Pipeline</h2>
+<div class="diagram-box">
++----------------------------------------------------------------------------------------------------+
+|                                     CHRONOLOGICAL EVENT STREAM                                     |
+|                              (Merged Ad Requests & Clicks in IST order)                            |
++-------------------------------------------------+--------------------------------------------------+
+                                                  |
+                                                  v
++-------------------------------------------------+--------------------------------------------------+
+|                              AD-SERVING ENGINE CORE PIPELINE                                       |
+|                                                                                                    |
+|  1. ELIGIBILITY FILTER       Geo, Device, Category matching; Flight date bounds; Wallet balance    |
+|  2. FREQUENCY CAP CHECK      User daily count &lt;= 3, User clock-hour count &lt;= 1                     |
+|  3. BUDGET PACING EVALUATOR  Cumulative hourly spend vs schedule (OVER_PACE / ON_PACE / UNDER_PACE) |
+|  4. PARITY THROTTLER         Drop odd request sequence numbers if OVER_PACE (seq_no % 2 == 0)      |
+|  5. BID NORMALISER           CPM = max_bid; CPC = max_bid * trailing_7d_CTR * 1000                 |
+|  6. SECOND-PRICE AUCTION     Winner = highest eCPM; Price = max(2nd_eCPM, Floor) + Rs 0.01         |
+|  7. BILLING & SETTLEMENT     CPM debited on impression; CPC debited on click; Publisher rev share  |
+|  8. IVT FRAUD DETECTOR       Sliding 10-min window (&gt; 5 clicks) -> Invalidate, Refund &amp; Clawback   |
++-------------------------------------------------+--------------------------------------------------+
+                                                  |
+                                                  v
++-------------------------------------------------+--------------------------------------------------+
+|                                    EXPORTED CSV DELIVERABLES                                       |
+|    - auction_log.csv             - click_log.csv                                                   |
+|    - daily_campaign_report.csv   - publisher_payout.csv                                            |
++----------------------------------------------------------------------------------------------------+
+</div>
 
 </body>
 </html>
